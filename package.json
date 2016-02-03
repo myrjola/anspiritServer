@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/timborovkov/anspiritServer/issues"
   },
-  "homepage": "https://github.com/timborovkov/anspiritServer#readme"
+  "homepage": "https://github.com/timborovkov/anspiritServer#readme",
+  "dependencies": {
+    "express": "^4.10.2"
+  }
 }
