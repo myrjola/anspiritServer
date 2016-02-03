@@ -1,0 +1,978 @@
+.navbar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: rgba(10, 170, 245, .18);
+  color: #363131;
+}
+
+.navbar.menu {
+  background-color: #2691c4;
+}
+
+.logo {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 2px;
+  margin-left: 0px;
+  padding-top: 0px;
+}
+
+.brand {
+  position: absolute;
+  left: 10%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 250px;
+  height: 100px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.link {
+  height: 70px;
+  padding-top: 24px;
+  background-color: rgba(0, 79, 116, .49);
+  font-family: Verdana, Geneva, sans-serif;
+  color: #fff;
+  font-size: 17px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: red;
+}
+
+.link.w--current {
+  padding-top: 24px;
+  background-color: rgba(0, 146, 214, .49);
+  color: #fff;
+}
+
+.link.w--current:hover {
+  color: red;
+}
+
+.link.rounded {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 4px;
+  padding-top: 12px;
+}
+
+.mobilemenu {
+  background-color: hsla(0, 0%, 100%, 0);
+}
+
+.anspirit_name {
+  position: absolute;
+  left: 19px;
+  top: 24px;
+  display: block;
+  width: auto;
+  margin-top: 0px;
+  margin-left: 78px;
+  font-family: Exo, sans-serif;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: left;
+  cursor: default;
+}
+
+.slider {
+  position: absolute;
+  height: 500px;
+}
+
+.topvideo {
+  top: -66px;
+}
+
+.slogan {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  margin-top: 18px;
+  font-size: 19px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.textblock1 {
+  position: absolute;
+  left: 20%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  max-width: 400px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.pic1 {
+  position: static;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  max-width: 700px;
+  min-width: 500px;
+  opacity: 1;
+}
+
+.img1 {
+  position: absolute;
+  top: 260px;
+  max-width: 300px;
+  min-width: 100px;
+}
+
+.row1 {
+  position: static;
+  left: 0px;
+  top: 720px;
+  right: 0px;
+  z-index: 0;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.body {
+  overflow: visible;
+  background-color: #4e86a0;
+  color: #fff;
+  font-size: 15px;
+}
+
+.topbarimage {
+  display: block;
+  width: 100%;
+  max-height: 650px;
+  max-width: 100%;
+  min-height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.footer {
+  position: static;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 50px;
+  margin-left: 0px;
+  padding-bottom: 0px;
+  background-color: #383838;
+  text-align: left;
+}
+
+.toprow {
+  position: static;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  height: 900px;
+  margin-top: -50px;
+  background-image: url('../images/blogpost-2.png');
+  background-position: 50% 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.soon {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100px;
+  margin-top: 4px;
+  font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.heading {
+  text-align: center;
+}
+
+.t {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.copyright {
+  position: relative;
+  height: 40px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.topimage {
+  height: 700px;
+  margin-top: -60px;
+  background-image: url('../images/FutureHome_large.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.slogan2 {
+  position: absolute;
+  left: 0px;
+  top: 30%;
+  right: 0px;
+  bottom: 0px;
+  height: 100px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-family: Exo, sans-serif;
+  color: rgba(0, 0, 0, .78);
+  font-size: 45px;
+  line-height: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.shop {
+  position: static;
+  font-size: 48px;
+  text-align: center;
+}
+
+.comingsoon {
+  position: absolute;
+  left: 0px;
+  top: 45%;
+  right: 0px;
+  bottom: 0px;
+  height: 50px;
+  margin-top: 5px;
+  padding-top: 15px;
+  font-size: 23px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.prices {
+  margin-top: 100px;
+  margin-bottom: 65px;
+  font-size: 49px;
+  line-height: 27px;
+}
+
+.mainlogo {
+  position: static;
+  top: 93px;
+  display: block;
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 130px;
+  text-align: center;
+}
+
+.f {
+  position: static;
+  height: 100px;
+  background-color: #3a3a3a;
+}
+
+.menubg {
+  position: absolute;
+}
+
+.footer_link {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Exo, sans-serif;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.footer_link:hover {
+  color: red;
+}
+
+.footer_links {
+  position: relative;
+  margin-top: 0px;
+  margin-left: 20px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.fb {
+  position: static;
+  left: 113px;
+  top: 42px;
+  width: 50px;
+}
+
+.form_wraper {
+  max-width: 500px;
+  min-width: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.success {
+  background-color: hsla(0, 0%, 87%, 0);
+}
+
+.products {
+  margin-bottom: 58px;
+}
+
+.topbar_porducts {
+  height: 600px;
+  margin-top: -20px;
+  background-image: url('../images/00032275.Helsinki.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.product_name {
+  font-family: Exo, sans-serif;
+  text-align: center;
+}
+
+.download_qd {
+  display: block;
+  width: 150px;
+  margin: 15px auto 20px;
+  text-align: center;
+}
+
+.donate_btn {
+  position: absolute;
+  left: 350px;
+  top: -20px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  width: 100px;
+}
+
+.paypal_donate {
+  position: relative;
+  width: 75px;
+}
+
+.donate_form {
+  position: static;
+  width: 75px;
+}
+
+.topimage_dev {
+  height: 700px;
+  background-image: url('../images/code-wallpaper-8238-8558-hd-wallpapers.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.devtools {
+  height: 300px;
+}
+
+.doc_pdf {
+  position: static;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ed3939;
+  color: #e7e7e7;
+  text-align: center;
+}
+
+.topimage_contact {
+  margin-top: -30px;
+  background-image: url('../images/free-office-wallpaper-26001-26685-hd-wallpapers.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.content_contact {
+  height: 200px;
+}
+
+.headercontact {
+  position: static;
+  display: block;
+  width: 210px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 100px;
+  color: #575757;
+  text-align: center;
+}
+
+.contacts {
+  display: block;
+  width: 350px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.labels_contact {
+  position: static;
+  width: 150px;
+  margin-top: 10px;
+  font-family: Exo, sans-serif;
+  color: #000;
+  font-size: 20px;
+}
+
+.email_contact {
+  position: absolute;
+  margin-top: -21px;
+  margin-left: 160px;
+  padding-top: 0px;
+  color: #505050;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.profile_pic {
+  display: block;
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile_head {
+  text-align: center;
+}
+
+.about_profile {
+  display: block;
+  max-width: 400px;
+  min-width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+}
+
+.newsletter_submit_btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #2b5172;
+}
+
+.apiheades {
+  text-align: center;
+}
+
+.developer_registration {
+  display: block;
+  width: 300px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #02b952;
+  color: #e7e7e7;
+  text-align: center;
+}
+
+.developer_login {
+  display: block;
+  width: 300px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.dev_head_28374 {
+  font-family: Exo, sans-serif;
+  text-align: center;
+}
+
+.q_dev_paragraph_2136 {
+  padding-right: 12px;
+  padding-left: 13px;
+  font-size: 15px;
+}
+
+.co_history_121256871 {
+  font-family: Exo, sans-serif;
+  text-align: center;
+}
+
+.co_history_text_123571 {
+  display: block;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.job_search_63541 {
+  font-family: Exo, sans-serif;
+  font-size: 33px;
+  text-align: center;
+}
+
+.about_qhub_647634 {
+  display: block;
+  max-width: 700px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.connect_all_review_homepage {
+  position: relative;
+  display: block;
+  overflow: visible;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.connect_all_review_homepage.blur {
+  background-image: none;
+}
+
+.connect_pic-bg_homepage {
+  background-image: url('../images/cloud-iot.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.technology-list-16263 {
+  display: block;
+  max-width: 600px;
+  min-width: 200px;
+  margin-top: -24px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-family: Exo, sans-serif;
+  color: #fff;
+  font-size: 17px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tech-list-item-284811 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.add_tech_homepage19284 {
+  position: static;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #1c5081;
+  font-size: 17px;
+  text-align: center;
+}
+
+.bg_blured_listoftech_on_homepage {
+  background-image: url('../images/Home-office-macbook-air-iphone-glass-table-cool-wallpapers-2560x1440.jpg');
+  background-position: 0px 0px;
+  background-size: 1280px;
+}
+
+.bg_blured_listoftech_on_homepage.blur {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+  display: block;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('../images/Home-office-macbook-air-iphone-glass-table-cool-wallpapers-2560x1440.jpg');
+  background-position: 50% 0px;
+  background-size: cover;
+  text-align: left;
+}
+
+.suggest_container_div_1638 {
+  height: 900px;
+  margin-top: -23px;
+  background-image: url('../images/456498.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.suggest_title_as24 {
+  width: 100%;
+  padding-top: 76px;
+  font-family: Exo, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.more_heading_suggest1983 {
+  position: static;
+  margin-top: 0px;
+  padding-top: 30px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.suggestion_form {
+  display: block;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.submit_suggestion_btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.what-is-q-header-on-homepage {
+  margin-top: 80px;
+  font-family: Exo, sans-serif;
+  text-align: center;
+}
+
+.what-is-anspirit_homepage {
+  display: block;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.main_bg_image_homepage {
+  position: fixed;
+  width: 100%;
+}
+
+.whatisq_homepage_icons {
+  background-color: hsla(0, 0%, 100%, .19);
+}
+
+.icon {
+  width: 100%;
+}
+
+.icon_text {
+  font-family: Exo, sans-serif;
+  text-align: center;
+}
+
+.qhubpicmain {
+  height: 650px;
+  margin-top: 29px;
+  background-image: url('../images/Hub.png');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.personal-email-on-contact-page {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  padding-bottom: 0px;
+  font-family: Exo, sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.map_homepage {
+  position: static;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 300px;
+  margin-top: 60px;
+}
+
+.technologies_in_hub_shoppage {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.block_of_tech_on_qhub_page {
+  background-color: #dadada;
+}
+
+.paypal_donate_form_wraper {
+  position: static;
+  left: 13px;
+  display: block;
+  width: 75px;
+}
+
+.footerlinkincolumns {
+  max-width: 600px;
+  min-width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.team-video {
+  text-align: center;
+}
+
+.scrolldown_icon {
+  position: static;
+  display: block;
+  width: 150px;
+  margin-top: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.qhubfutureslisttextfield {
+  margin-bottom: 30px;
+  font-family: Exo, sans-serif;
+  color: #000;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.headingonproductspage {
+  width: 100%;
+  padding-top: 150px;
+  font-family: Exo, sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .logo {
+    margin-top: 15px;
+  }
+  .brand {
+    margin-top: 5px;
+  }
+  .anspirit_name {
+    margin-left: 80px;
+    font-size: 30px;
+  }
+  .textblock1 {
+    left: 5%;
+    top: 0px;
+    margin-top: 12px;
+  }
+  .img1 {
+    top: 300px;
+  }
+  .footer {
+    top: 1600px;
+  }
+  .toprow {
+    margin-top: -60px;
+  }
+  .soon {
+    line-height: 44px;
+  }
+  .copyright {
+    position: static;
+    left: 0px;
+    right: 0px;
+    bottom: -260px;
+  }
+  .topimage {
+    margin-top: -60px;
+  }
+  .slogan2 {
+    top: 40%;
+    line-height: 40px;
+  }
+  .comingsoon {
+    top: 49%;
+    padding-top: 20px;
+  }
+  .prices {
+    line-height: 25px;
+  }
+  .fb {
+    left: 111px;
+    top: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand {
+    margin-top: 0px;
+  }
+  .anspirit_name {
+    margin-left: 85px;
+    font-size: 30px;
+  }
+  .footer {
+    top: 1800px;
+  }
+  .soon {
+    margin-top: 15px;
+    line-height: 43px;
+  }
+  .copyright {
+    position: static;
+  }
+  .topimage {
+    margin-top: -60px;
+  }
+  .slogan2 {
+    top: 36%;
+    line-height: 56px;
+  }
+  .comingsoon {
+    padding-top: 20px;
+  }
+  .fb {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .paypal_donate_form_wraper {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .columninfooterlinkcolumndiv {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .logo {
+    margin-top: 5px;
+  }
+  .link {
+    height: 66px;
+    padding-top: 24px;
+    padding-bottom: 0px;
+  }
+  .mobilemenu {
+    position: absolute;
+    background-color: #837c7c;
+  }
+  .slogan {
+    top: 40%;
+  }
+  .img1 {
+    top: 360px;
+    margin-left: -7px;
+  }
+  .row1 {
+    max-height: 20000px;
+  }
+  .footer {
+    position: static;
+  }
+  .toprow {
+    margin-top: -60px;
+  }
+  .soon {
+    top: 48%;
+    height: 200px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .copyright {
+    position: static;
+  }
+  .anspirit_header {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 100px;
+    font-family: Exo, sans-serif;
+    font-size: 52px;
+    text-align: center;
+  }
+  .topimage {
+    margin-top: -60px;
+  }
+  .slogan2 {
+    top: 24%;
+    max-height: 200px;
+    min-height: 100px;
+    line-height: 49px;
+  }
+  .comingsoon {
+    position: relative;
+    top: 54%;
+    font-size: 32px;
+  }
+  .prices {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 117px;
+    margin-left: auto;
+    font-size: 36px;
+  }
+  .fmobile {
+    position: static;
+  }
+  .contacts {
+    width: 300px;
+  }
+  .email_contact {
+    font-size: 14px;
+  }
+  .tech-list-item-284811 {
+    color: #fff;
+  }
+}
+
