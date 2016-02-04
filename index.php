@@ -1,4 +1,4 @@
-<?php include "/sitecake.php"; ?>
+<?php include "sitecake/server/sitecake_entry.php"; ?>
 <!DOCTYPE html>
 <html data-wf-site="56a3b3c7d0a034e52a6e8200" data-wf-page="56a3b3c7d0a034e52a6e8201">
 <head>
