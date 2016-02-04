@@ -89,7 +89,7 @@
       </div>
       <div class="w-col w-col-2 columninfooterlinkcolumndiv"><a href="https://github.com/timborovkov/anspirit" class="footer_link">GitHub</a>
       </div>
-      <div class="w-col w-col-2 columninfooterlinkcolumndiv"><a href="contact.html" class="footer_link">Support</a>
+      <div class="w-col w-col-2 columninfooterlinkcolumndiv"><a href="contact.php" class="footer_link">Support</a>
       </div>
       <div class="w-col w-col-2 columninfooterlinkcolumndiv">
         <div class="w-form paypal_donate_form_wraper">
