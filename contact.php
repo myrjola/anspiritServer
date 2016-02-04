@@ -1,15 +1,12 @@
+<?php include "/sitecake.php"; ?>
 <!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed Feb 03 2016 16:11:27 GMT+0000 (UTC) -->
-<html data-wf-site="56a3b3c7d0a034e52a6e8200" data-wf-page="56a3ee6ad9d3baea3334f34b">
+<html data-wf-site="56a3b3c7d0a034e52a6e8200" data-wf-page="56a4b6b3d0a034e52a6f4ebf">
 <head>
   <meta charset="utf-8">
-  <title>Anspirit: QHub</title>
-  <meta name="description" content="Want to buy Q Hub and some more cool stuff? This is right place for you!
-Q is awesome and just too smart. It can be perfect friend and assistant!">
-  <meta property="og:title" content="Anspirit: QHub">
-  <meta property="og:description" content="Want to buy Q Hub and some more cool stuff? This is right place for you!
-Q is awesome and just too smart. It can be perfect friend and assistant!">
+  <title>Anspirit: Contact</title>
+  <meta name="description" content="IOT is our future. Everyday people create more and more smart devices. These devices are irreplaceable part of our lives. But how we use them? Every smart device means new app on your smartphone, desktop, smartwatch edc. Anspirit and qproject will connect all of them with each other using one simple ecosystem based on Rest API. Every device can control each other and get information from them.">
+  <meta property="og:title" content="Contact">
+  <meta property="og:description" content="IOT is our future. Everyday people create more and more smart devices. These devices are irreplaceable part of our lives. But how we use them? Every smart device means new app on your smartphone, desktop, smartwatch edc. Anspirit and qproject will connect all of them with each other using one simple ecosystem based on Rest API. Every device can control each other and get information from them.">
   <meta name="twitter:card" content="summary">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
@@ -50,6 +47,10 @@ Q is awesome and just too smart. It can be perfect friend and assistant!">
       -moz-border-radius: 40px;
         -webkit-border-radius: 40px;
       }
+      .circle{
+      -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+      }
     </style>
   </div>
   <div data-collapse="medium" data-animation="over-right" data-duration="400" data-contain="1" class="w-nav navbar">
@@ -57,40 +58,45 @@ Q is awesome and just too smart. It can be perfect friend and assistant!">
       <div class="brand">
         <div class="w-hidden-tiny anspirit_name">Anspirit</div><img width="91" src="images/anspirit.ico" class="logo">
       </div>
-      <nav role="navigation" class="w-nav-menu mobilemenu"><a href="index.html" class="w-nav-link link rounded">Home</a><a href="products.html" class="w-nav-link link rounded">Products</a><a href="qhub.html" class="w-nav-link link rounded">QHUB</a><a href="contact.html" class="w-nav-link link rounded">Contact</a>
+      <nav role="navigation" class="w-nav-menu mobilemenu"><a href="index.php" class="w-nav-link link rounded">Home</a><a href="products.php" class="w-nav-link link rounded">Products</a><a href="qhub.php" class="w-nav-link link rounded">QHUB</a><a href="contact.php" class="w-nav-link link rounded">Contact</a>
       </nav>
       <div class="w-nav-button">
         <div class="w-icon-nav-menu"></div>
       </div>
     </div>
   </div>
-  <div id="shop" class="w-section topimage">
-    <div class="slogan2">Bring future to your life
-      <br>QHUB</div>
-    <div class="comingsoon">Coming soon!</div>
-  </div>
-  <div class="w-section shop">
-    <div class="prices">Starting from
-      <br>
-      <br> $149</div>
-  </div>
-  <div class="w-section whatdoqhubdo">
-    <p class="qhubfutureslisttextfield">Home control
-      <br>Voice recognition
-      <br>Face recognition
-      <br>Gesture recognition
-      <br>Emotion recognition</p>
-  </div>
-  <div class="w-row">
-    <div class="w-col w-col-6">
-      <p class="about_qhub_647634">For people who like home automation and are not geeks we build QHUB. QHUB is smarter way to get access to your smart devices. Q will be always where you are! You can always start with it. Anywhere you are and anytime you want Q will be there. Without QHUB it is impossible (Ps. you can always use some not working and stupid software, as well laging hardware from our competitors).</p>
+  <div class="w-section topimage_contact">
+    <h1 class="headercontact">Contact Us</h1>
+    <div class="contacts">
+      <div class="labels_contact">Company email:</div><a href="mailto:anspirit.co@gmail.com?subject=Contact%20Anspirit" class="email_contact">anspirit.co@gmail.com</a>
+      <div class="labels_contact">Company phone:</div><a href="tel:+358400998404" class="email_contact">+358 400 998404</a>
     </div>
-    <div class="w-col w-col-6">
-      <p class="about_qhub_647634">Have you ever been in this situation when you are coming home tired and want some coffee or sleep or both? Q can communicate with the user and ask it about its regards. If user want something Q will do it’s best to make it real! Let’s imagine user is a big fan of Justin Bieber and he will have concert in users city soon. Q will tell about this to user and ask him if he want to go! Also Q will check if user’s friends are going as well.</p>
+    <div class="w-row">
+      <div class="w-col w-col-6"><img width="200" src="images/tim.png" class="profile_pic circle">
+        <h2 class="profile_head">Tim Borovkov<br>COO / CTO</h2>
+        <p class="about_profile">I’m 14 years old young entrepreneur and software developer. I study machine learning, marketing, micro economics and lot of cool stuff! I love IoT and Open Source I think this will be our future!</p><a href="mailto:timofei.borovkov@hotmail.com" class="personal-email-on-contact-page">timofei.borovkov@hotmail.com</a>
+      </div>
+      <div class="w-col w-col-6"><img width="200" src="images/anssi.png" class="profile_pic circle">
+        <h2 class="profile_head">Anssi Ylisaukko-oja<br>CEO</h2>
+        <p class="about_profile">I’m studying electrical engineering in Aalto University. I’m really interested in entrepreneurship and want to be creating future’s technology. I believe that emotion recognition and understanding is important part of future technology.</p><a href="mailto:ansyli@gmail.com" class="personal-email-on-contact-page">ansyli@gmail.com</a>
+      </div>
     </div>
   </div>
-  <div class="w-section qhubpicmain"></div>
-  <div class="w-section block_of_tech_on_qhub_page"><img src="images/qHub tech.png" class="technologies_in_hub_shoppage">
+  <div class="w-section content_contact_15151">
+    <h2 class="co_history_121256871">Company history</h2>
+    <p class="co_history_text_123571">Anspirit started on November 2015 in Junction. After that we started developing Q further!
+      <br>We started developing from QDesktop and Server Side. On January we ordered parts for our first prototype
+      <br>and started working on Q OS, operating system for QHub. We went to Startup Cup @ Haaga Helia in January.
+      <br>That was cool and useful experience!
+      <br>We sent our application to Vertical and now waiting for result. There we will get coaching and possible &nbsp;150 000 euro of investment. On 2nd of February we got our Microsoft BizSpark subscription. Now we have lot of cool things from Microsoft, like Azure, Microsoft Office and lot of cool stuff.</p>
+    <h2 class="co_history_121256871">Company now</h2>
+    <p class="co_history_text_123571">Now we are waiting QHub parts to come, developing Q OS and QDesktop.
+      <br>This month we will move our servers to Node.js and register company.
+      <br>We are working with engineeres on QHub production mode.
+      <br>On Business side we are contacting our partners right now and searching for co-operation, if you are interested in developing Q further or interested in co-operation please contact us!</p>
+  </div>
+  <div class="w-embed w-iframe">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/5CB9PqebOZ0" frameborder="0" allowfullscreen=""></iframe>
   </div>
   <div class="w-section footer">
     <div class="w-row footerlinkincolumns">

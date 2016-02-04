@@ -1,6 +1,5 @@
+<?php include "/sitecake.php"; ?>
 <!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed Feb 03 2016 16:11:27 GMT+0000 (UTC) -->
 <html data-wf-site="56a3b3c7d0a034e52a6e8200" data-wf-page="56a4a94be0928cee2a96d640">
 <head>
   <meta charset="utf-8">
@@ -55,7 +54,7 @@
       <div class="brand">
         <div class="w-hidden-tiny anspirit_name">Anspirit</div><img width="91" src="images/anspirit.ico" class="logo">
       </div>
-      <nav role="navigation" class="w-nav-menu mobilemenu"><a href="index.html" class="w-nav-link link rounded">Home</a><a href="products.html" class="w-nav-link link rounded">Products</a><a href="qhub.html" class="w-nav-link link rounded">QHUB</a><a href="contact.html" class="w-nav-link link rounded">Contact</a>
+      <nav role="navigation" class="w-nav-menu mobilemenu"><a href="index.php" class="w-nav-link link rounded">Home</a><a href="products.php" class="w-nav-link link rounded">Products</a><a href="qhub.php" class="w-nav-link link rounded">QHUB</a><a href="contact.php" class="w-nav-link link rounded">Contact</a>
       </nav>
       <div class="w-nav-button">
         <div class="w-icon-nav-menu"></div>
