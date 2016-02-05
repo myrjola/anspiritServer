@@ -41,7 +41,7 @@
  if ($recipients = $swift->send($message, $failures))
  {
      // This will let us know how many users received this message
-     echo 'Message sent out to '.$recipients.' users';
+     echo 'Message has been sent';
  }
  // something went wrong =(
  else
@@ -92,7 +92,7 @@
    if ($recipients = $swift->send($message, $failures))
    {
        // This will let us know how many users received this message
-       echo 'Message sent out to '.$recipients.' users';
+       echo 'Message has been sent';
    }
    // something went wrong =(
    else
@@ -170,7 +170,8 @@
          </table>
       </form>
 
-     <?php endif; ?>
+    <?php endif; if(!$_SESSION['username']):?>
      <h1>You don't have access!</h1>
+    <?php endif; ?>
    </body>
  </html>
