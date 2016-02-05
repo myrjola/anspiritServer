@@ -1,58 +1,8 @@
 <?php
  include_once "swift/swift_required.php";
- $text = "Hi!\nHow are you?\n";
- $html = "<html>
-       <head></head>
-       <body>
-           <p>Hi!<br>
-               How are you?<br>
-           </p>
-       </body>
-       </html>";
- // This is your From email address
- $from = array('tim@anspirit.org' => 'Tim from Anspirit');
- // Email recipients
- $to = array(
-       'timofei.borovkov@hotmail.com'=>'Dear customer!'
- );
- // Email subject
- $subject = 'Example PHP Email';
-
- // Login credentials
- $username = 'azure_2eba721938d24ffa0fb3a2d9fde6cc43@azure.com';
- $password = 'Junction2015';
-
- // Setup Swift mailer parameters
- $transport = Swift_SmtpTransport::newInstance('smtp.sendgrid.net', 587);
- $transport->setUsername($username);
- $transport->setPassword($password);
- $swift = Swift_Mailer::newInstance($transport);
-
- // Create a message (subject)
- $message = new Swift_Message($subject);
-
- // attach the body of the email
- $message->setFrom($from);
- $message->setBody($html, 'text/html');
- $message->setTo($to);
- $message->addPart($text, 'text/plain');
-
- // send message
- if ($recipients = $swift->send($message, $failures))
- {
-     // This will let us know how many users received this message
-     echo 'Message has been sent';
- }
- // something went wrong =(
- else
- {
-     echo "Something went wrong - ";
-     print_r($failures);
- }
-
  if(isset($_POST['sendBtn'])){
-   $fromName = $_POST['fromName'];
-   $fromEmail = $_POST['fromEmail'];
+   $fromName = $_SESSION['username'] + " from Anspirit";
+   $fromEmail = $_SESSION['username'] + "@anspirit.org";
    $toName = $_POST['toName'];
    $toEmail = $_POST['toEmail'];
    $mailHeader = $_POST['header'];
@@ -117,22 +67,6 @@
          <table>
            <tr>
              <td>
-               <h3>From name: </h3>
-             </td>
-             <td>
-               <input type="text" name="fromName">
-             </td>
-           </tr>
-           <tr>
-             <td>
-               <h3>From email: </h3>
-             </td>
-             <td>
-               <input type="email" name="fromEmail">
-             </td>
-           </tr>
-           <tr>
-             <td>
                <h3>To name: </h3>
              </td>
              <td>
@@ -160,11 +94,11 @@
                <h3>Content: </h3>
              </td>
              <td>
-               <textarea name="content" rows="30" cols="50"></textarea>
+               <textarea name="content" rows="20" cols="40"></textarea>
              </td>
            </tr>
            <tr>
-             <input type="submit" value="Send" name="sendBtn">
+             <td><input type="submit" value="Send" name="sendBtn"></td>
            </tr>
          </table>
       </form>
