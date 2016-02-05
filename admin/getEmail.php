@@ -8,9 +8,11 @@
     }
   }
   */
-  $file = fopen("test.txt","w");
-  echo fwrite($file, "Got email: " + $_POST);
-  fclose($file);
+  if(isset($_POST['text'])){
+    $file = fopen("test.txt","w");
+    echo fwrite($file, "Got email: ");
+    fclose($file);  
+  }
  ?>
  <!DOCTYPE html>
  <html>
