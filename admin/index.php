@@ -29,7 +29,7 @@ if(isset($_POST['username'])) {
         <?php if($_SESSION['username']): ?>
             <p>You are logged in as <?=$_SESSION['username']?></p>
             <p><a href="?logout=1">Logout</a></p>
-            <iframe src="./email.php" width="500" height="1000px"></iframe>
+            <iframe src="./email.php" width="500" height="600px"></iframe>
         <?php endif; if(!$_SESSION['username']): ?>
         <form name="login" action="" method="post">
             Username:  <input type="text" name="username" value="" /><br />
