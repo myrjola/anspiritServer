@@ -109,7 +109,6 @@
      <title>Anspirit email</title>
    </head>
    <body>
-     <?php if($_SESSION['username']): ?>
          <p>You are logged in as <?=$_SESSION['username']?></p>
          <p><a href="../admin/index.php?logout=1">Logout</a></p>
 
@@ -169,9 +168,5 @@
            </tr>
          </table>
       </form>
-
-    <?php endif; if(!$_SESSION['username']):?>
-     <h1>You don't have access!</h1>
-    <?php endif; ?>
    </body>
  </html>
