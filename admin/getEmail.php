@@ -4,3 +4,13 @@
     $mysqli->query("INSERT INTO email(from, to, subject, text) VALUES ($_POST['from'], $_POST['to'], $_POST['subject'], $_POST['text'])");
   }
  ?>
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <title>Thank's for your email!</title>
+   </head>
+   <body>
+     <h1>Tank You!</h1>
+   </body>
+ </html>

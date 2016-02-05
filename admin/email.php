@@ -59,9 +59,6 @@
      <title>Anspirit email</title>
    </head>
    <body>
-         <p>You are logged in as <?=$_SESSION['username']?></p>
-         <p><a href="../admin/index.php?logout=1">Logout</a></p>
-
       <!-- Mail UI -->
       <form method="post">
          <table>
