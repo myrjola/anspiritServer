@@ -1,7 +1,7 @@
 <?php
   if(isset($_POST['text']) && isset($_POST['to']) && isset($_POST['from']) && isset($_POST['subject'])){
     if($mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain")){
-      if($mysqli->query("INSERT INTO email (from, to, subject, text) VALUES ('from', 'to', 'subject', 'text')")){
+      if($mysqli->query("INSERT INTO `email` (`from`, `to`, `subject`, `text`) VALUES (''". $_POST['from'] ."', '". $_POST['to'] ."', '". $_POST['subject'] ."', '". $_POST['text']"')")){
         echo "Done, your email has been recieved!";
       }
     }
