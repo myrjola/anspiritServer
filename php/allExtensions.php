@@ -2,7 +2,7 @@
   header("Content-Type: text/javascript");
   $toRet = array();
 
-  $mysqli = new mysqli('localhost','root','junction2015','qproject');
+  $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
   $result = $mysqli -> query("SELECT * FROM `extensions`");
   if($result != null && $result->num_rows > 0){
     while($ext = $result -> fetch_assoc()){

@@ -1,7 +1,7 @@
 <?php
   header("Content-Type: text/javascript");
   $user = $_GET['user'];
-  $mysqli = new mysqli('localhost','root','junction2015','qproject');
+  $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
   $query = "SELECT * FROM `userExtensions` WHERE `userId` = " . $user;
   if($result = $mysqli -> query($query)){
 

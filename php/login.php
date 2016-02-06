@@ -18,7 +18,7 @@
   $lang = null;
   $country = null;
 
-  $mysqli = new mysqli('localhost','root','junction2015','qproject');
+  $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
   $query = "SELECT * FROM `users` WHERE `email` = '" . $email . "'";
   $result = $mysqli -> query($query);
   if($result != null){

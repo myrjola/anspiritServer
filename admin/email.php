@@ -9,7 +9,6 @@
    $mailContent = $_POST['content'];
 
    $text = $mailContent;
-   $html = $mailContent;
    // This is your From email address
    $from = array($fromEmail => $fromName);
    // Email recipients
@@ -34,14 +33,11 @@
 
    // attach the body of the email
    $message->setFrom($from);
-   $message->setBody($html, 'text/html');
    $message->setTo($to);
    $message->addPart($text, 'text/plain');
 
    // send message
-   if ($recipients = $swift->send($message, $failures))
-   {
-       // This will let us know how many users received this message
+   if ($recipients = $swift->send($message, $failures)){
        echo 'Message has been sent';
    }
    // something went wrong =(

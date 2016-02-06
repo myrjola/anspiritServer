@@ -6,7 +6,7 @@
 
   if(isset($_POST['stripeToken'])){
     $token = $_POST['stripeToken'];
-    $mysqli = new mysqli('localhost','root','junction2015','qproject');
+    $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
     if($result = $mysqli->query("SELECT * FROM `payments` WHERE `done` = false AND `from` = '$user'")){
     if($result->num_rows > 0){
       if($result = $mysqli -> query("UPDATE `payments` SET `stripeToken`='$token', `done`=true WHERE `done` = false AND `from` = $user")){

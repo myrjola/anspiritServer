@@ -5,7 +5,7 @@
   $age = $_POST['age'];
 
   header("Content-Type: text/javascript");
-  $mysqli = new mysqli('localhost','root','junction2015','qproject');
+  $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
   $query = "SELECT * FROM `users` WHERE `email` = '" . $email . "'";
   $result = $mysqli -> query($query);
   if($result -> num_rows > 0){
@@ -22,7 +22,7 @@
         $extensions = array();
         $query = "INSERT INTO `userExtensions`(`userID`, `extensions`) VALUES ('".$uid."','".serialize($extensions)."')";
         $result = $mysqli -> query($query);
-        
+
         if($result != null){
           $r = array("done"=> true);
         }else{
