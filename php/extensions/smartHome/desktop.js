@@ -1,9 +1,9 @@
 
-	module.exports = processSpeech function(speech, callback){
+	module.exports = processSpeech function(speech, cb){
 	    var toRet = {done:false};
-	    callback(toRet);
+	    cb(toRet);
 	}
-	module.exports = processActionFromSpeech function(action, parameters, speech, emotion, callback){
+	module.exports = processActionFromSpeech function(action, parameters, speech, emotion, cb){
 	     var toRet = {done:false};
 			 if(action.contains('smarthome')){
 				 $.ajax({
@@ -14,14 +14,14 @@
 						 console.log("Sent request to hub!");
 						 console.log(data);
 						 toRet.done = true;
-						 callback(toRet);
+						 cb(toRet);
 					 },
 					 error: function(a, error) {
-						 	callback(toRet);
+						 	cb(toRet);
 						 console.error(error);
 					 }
 				 });
 			 }else{
-				 	allback(toRet);
+				 	cb(toRet);
 			 }
 	}
