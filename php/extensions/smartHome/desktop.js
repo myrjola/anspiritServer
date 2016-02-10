@@ -4,7 +4,6 @@
 	    callback(toRet);
 	}
 	exports.processActionFromSpeech = function(qapi, action, parameters, speech, emotion, callback){
-			 var qapi = require('../api/qapi.js');
 	     var toRet = {done:false};
 			 if(action.contains('smarthome')){
 				 $.ajax({
