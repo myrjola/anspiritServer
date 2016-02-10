@@ -1,9 +1,9 @@
 
-	exports.processSpeech = function(qapi, speech, callback){
+	module.exports = processSpeech function(speech, callback){
 	    var toRet = {done:false};
 	    callback(toRet);
 	}
-	exports.processActionFromSpeech = function(qapi, action, parameters, speech, emotion, callback){
+	module.exports = processActionFromSpeech function(action, parameters, speech, emotion, callback){
 	     var toRet = {done:false};
 			 if(action.contains('smarthome')){
 				 $.ajax({
