@@ -5,23 +5,27 @@
 	}
 	module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, cb){
 	     var toRet = {done:false};
-			 if(action.contains('smarthome')){
-				 $.ajax({
-					 type: 'get',
-					 url: 'http://localhost:3000/hub/1',//"http://api.anspirit.net:3000/hub/1",
-					 data: {task: {action: action, parameters: parameters}, secret: qapi.getUserSecret(), user: qapi.getUserId()},
-					 success: function(data){
-						 console.log("Sent request to hub!");
-						 console.log(data);
-						 toRet.done = true;
-						 cb(toRet);
-					 },
-					 error: function(a, error) {
-						 	cb(toRet);
-						 console.error(error);
-					 }
-				 });
+			 if(action != null){
+				 if(action.contains('smarthome')){
+					 $.ajax({
+						 type: 'get',
+						 url: 'http://localhost:3000/hub/1',//"http://api.anspirit.net:3000/hub/1",
+						 data: {task: {action: action, parameters: parameters}, secret: qapi.getUserSecret(), user: qapi.getUserId()},
+						 success: function(data){
+							 console.log("Sent request to hub!");
+							 console.log(data);
+							 toRet.done = true;
+							 cb(toRet);
+						 },
+						 error: function(a, error) {
+								cb(toRet);
+							 console.error(error);
+						 }
+					 });
+				 }else{
+						cb(toRet);
+				 }
 			 }else{
-				 	cb(toRet);
+				 cb(toRet);
 			 }
 	}
