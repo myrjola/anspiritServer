@@ -10,7 +10,7 @@
 					 $.ajax({
 						 type: 'post',
 						 url: 'http://localhost:3000/hub/1',//"http://api.anspirit.net:3000/hub/1",
-						 data: {task: {action: action, parameters: parameters}, secret: global.qapi.getUserSecret(), user: global.qapi.getUserId()},
+						 data: {task: {action: action, parameters: parameters}, secret: global.qapi.getUserSecret(), user: global.qapi.getUserId(), hubId: 1},
 						 success: function(data){
 							 console.log("Sent request to hub!");
 							 console.log(data);
@@ -29,3 +29,5 @@
 				 cb(toRet);
 			 }
 	}
+
+	//TODO get hub id for user
