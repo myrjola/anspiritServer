@@ -8,7 +8,7 @@
 			 if(action != null){
 				 if(action.contains('smarthome')){
 					 $.ajax({
-						 type: 'get',
+						 type: 'post',
 						 url: 'http://localhost:3000/hub/1',//"http://api.anspirit.net:3000/hub/1",
 						 data: {task: {action: action, parameters: parameters}, secret: global.qapi.getUserSecret(), user: global.qapi.getUserId()},
 						 success: function(data){
