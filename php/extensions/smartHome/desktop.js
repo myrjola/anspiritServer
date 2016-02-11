@@ -1,6 +1,7 @@
 
 	module.exports.processSpeech = function(speech, cb){
 	    var toRet = {done:false};
+			alert(a);
 	    cb(toRet);
 	}
 	module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, cb){
