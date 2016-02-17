@@ -10,7 +10,7 @@ $query = "SELECT * FROM `users` WHERE `id`='".$id."' AND `email`='".$email."' AN
   if($result = $mysqli -> query($query)){
     $row = $result -> fetch_assoc();
     if($row != null){
-      $returnArray = array('id'=>$id, 'name'=>$row['fullname'], 'email'=>$row['email'], 'age'=>$row['age'], 'version'=>$row['version'], 'lang'=>$row['lang'], 'secrer'=>$row['tokenCode']);
+      $returnArray = array('id'=>$id, 'name'=>$row['fullname'], 'email'=>$row['email'], 'age'=>$row['age'], 'version'=>$row['version'], 'lang'=>$row['lang'], 'secret'=>$row['tokenCode']);
     }else{
       $returnArray = array('error' => 'wrong auth');
     }

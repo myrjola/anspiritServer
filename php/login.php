@@ -31,12 +31,13 @@
         $country = $row['country'];
         $lang = $row['lang'];
         $tokenCode = $row['tokenCode'];
+        $hubs = $row['hubs'];
       }
     }
   }
   $mysqli -> query("INSERT INTO `tryToLogin`(`email`, `date`, `ip`) VALUES ('".$email."', NOW(), '".$ip."')");
 
-  $data = array('login'=> $login, 'id'=> $id, 'version'=> $version, 'lang'=> $lang, 'name'=>$name, 'country'=>$country, 'tokenCode'=>$tokenCode, 'email'=>$email);
+  $data = array('login'=> $login, 'id'=> $id, 'hubs'=>$hubs, 'version'=> $version, 'lang'=> $lang, 'name'=>$name, 'country'=>$country, 'tokenCode'=>$tokenCode, 'email'=>$email);
   $data = json_encode($data);
   echo($data);
 
