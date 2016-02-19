@@ -988,12 +988,12 @@ html.w-mod-js *[data-ix="menubar"] {
   }
   .ef{
     position: relative;
-    min-height: 700px;
+    min-height: 600px;
     max-height: 1000px;
   }
   .image-clmn-home-page{
     position: absolute;
-    height: 400px;
+    height: 200px;
     bottom: 10px;
     left: 0px;
   }
