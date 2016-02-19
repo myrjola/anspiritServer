@@ -980,6 +980,13 @@ html.w-mod-js *[data-ix="menubar"] {
     margin-right: auto;
     margin-left: auto;
   }
+  .text-description-clmn-home-page{
+    position: absolute;
+    right: 0px;
+  }
+  .image-clmn-home-page{
+    left: 0px;
+  }
   .columninfooterlinkcolumndiv {
     margin-top: 10px;
   }
