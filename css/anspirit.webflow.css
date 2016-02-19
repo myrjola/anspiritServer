@@ -853,7 +853,7 @@
 
 .imgaeonrow {
   display: block;
-  max-width: 400px;
+  max-width: 350px;
   margin-right: auto;
   margin-left: auto;
   -webkit-transform: translate(0px, 0px);
@@ -984,12 +984,15 @@ html.w-mod-js *[data-ix="menubar"] {
     position: absolute;
     right: 0px;
     min-height: 300px;
-    max-height: 550px;
+    max-height: 600px;
   }
   .ef{
     position: relative;
     min-height: 700px;
     max-height: 1000px;
+  }
+  .imgaeonrow{
+    height: 300px;
   }
   .image-clmn-home-page{
     position: absolute;
