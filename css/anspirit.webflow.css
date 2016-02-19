@@ -853,7 +853,7 @@
 
 .imgaeonrow {
   display: block;
-  max-width: 350px;
+  max-width: 400px;
   margin-right: auto;
   margin-left: auto;
   -webkit-transform: translate(0px, 0px);
@@ -984,8 +984,11 @@ html.w-mod-js *[data-ix="menubar"] {
     position: absolute;
     right: 0px;
   }
+  .w-row{
+    height: 700px;
+  }
   .image-clmn-home-page{
-    top: 300px;
+    bottom: 10px;
     left: 0px;
   }
   .columninfooterlinkcolumndiv {
