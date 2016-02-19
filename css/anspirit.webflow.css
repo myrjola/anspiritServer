@@ -987,11 +987,12 @@ html.w-mod-js *[data-ix="menubar"] {
     max-height: 550px;
   }
   .w-row{
-    min-height: 1000px;
-    max-height: 1500px;
+    position: relative;
+    min-height: 700px;
+    max-height: 1000px;
   }
   .image-clmn-home-page{
-    position: relative;
+    position: absolute;
     height: 450px;
     bottom: 10px;
     left: 0px;
