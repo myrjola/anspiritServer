@@ -983,11 +983,14 @@ html.w-mod-js *[data-ix="menubar"] {
   .text-description-clmn-home-page{
     position: absolute;
     right: 0px;
+    min-height: 300px;
+    max-height: 550px;
   }
   .w-row{
     max-height: 1000px;
   }
   .image-clmn-home-page{
+    height: 450px;
     bottom: 10px;
     left: 0px;
   }
