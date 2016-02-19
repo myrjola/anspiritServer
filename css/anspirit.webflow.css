@@ -991,6 +991,7 @@ html.w-mod-js *[data-ix="menubar"] {
     max-height: 1000px;
   }
   .image-clmn-home-page{
+    position: absolute;
     height: 450px;
     bottom: 10px;
     left: 0px;
