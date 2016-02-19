@@ -3,4 +3,8 @@ User-agent: *
 Disallow: /php/
 Disallow: /js/
 Disallow: /css/
+Disallow: /Anspirit_files/
+Disallow: /admin/
+Disallow: /php/
+Disallow: /sitecake/
 Disallow: /.gitignore
