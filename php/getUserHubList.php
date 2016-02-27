@@ -13,9 +13,9 @@ if($result = $mysqli -> query($query)){
         //$returnArray = array('id'=>$id, 'email'=>$row['email'], 'hubList'=>$row['hubs']);
         $query = "SELECT * FROM `hub_list` WHERE `owner`='".$id."'";
         if($result = $mysqli->query($query)){
-          $hubs = array();
+          $hubs = array('hubList'=>array());
           while($row = $result->fetch_assoc()){
-            array_push($hubs, $row);
+            array_push($hubs['hubList'], $row);
           }
           //Hubs are now in $hubs
           $returnArray = $hubs;
