@@ -459,6 +459,9 @@
   background-image: url("http://uploads.webflow.com/56a3b3c7d0a034e52a6e8200/56a4ca0bb627cde4330587df_free-office-wallpaper-26001-26685-hd-wallpapers.jpg");
   background-position: 50% 50%;
   background-size: cover;
+  position: static;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .content_contact {
