@@ -388,6 +388,7 @@
   background-image: url("http://uploads.webflow.com/56a3b3c7d0a034e52a6e8200/56a4aabc4f77fc0455132b95_00032275.Helsinki.jpg");
   background-position: 50% 50%;
   background-size: cover;
+  position: static;
 }
 
 .product_name {
