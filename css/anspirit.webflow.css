@@ -207,7 +207,7 @@
   height: 900px;
   margin-top: -50px;
   background-image: url("http://uploads.webflow.com/56a3b3c7d0a034e52a6e8200/56a3c977b627cde43304f32e_blogpost-2.png");
-  background-position: 50% 0px;
+  background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -386,7 +386,7 @@
   height: 600px;
   margin-top: -20px;
   background-image: url("http://uploads.webflow.com/56a3b3c7d0a034e52a6e8200/56a4aabc4f77fc0455132b95_00032275.Helsinki.jpg");
-  background-position: 50% 0px;
+  background-position: 50% 50%;
   background-size: cover;
   position: static;
   background-repeat: no-repeat;
