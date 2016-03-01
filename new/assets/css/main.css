@@ -3194,3 +3194,67 @@
 			}
 
 	}
+
+
+
+	/* Own style */
+		.technology-list-16263 {
+			display: block;
+			max-width: 600px;
+			min-width: 200px;
+			margin-top: -24px;
+			margin-right: auto;
+			margin-left: auto;
+			padding-top: 30px;
+			padding-bottom: 40px;
+			color: #fff;
+			font-size: 17px;
+			text-align: left;
+			text-transform: uppercase;
+		}
+		.tech-list-item-284811 {
+			margin-top: 10px;
+			font-weight: 600;
+		}
+		.w-col {
+			position: relative;
+			float: left;
+			width: 100%;
+			min-height: 1px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.w-col .w-col {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.w-col-6 {
+			width: 50%;
+		}
+		.w-row,
+		.w-container .w-row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.w-container .w-row {
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+		.w-row:before,
+		.w-row:after {
+			content: " ";
+			display: table;
+		}
+		.w-row:after {
+			clear: both;
+		}
+		.w-row .w-row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		@media (max-width: 479px) {
+			.tech-list-item-284811 {
+				color: #fff;
+			}
+		}
