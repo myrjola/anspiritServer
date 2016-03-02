@@ -3265,7 +3265,8 @@
 		top: 600px;
 	}
 	.footerFaq{
+		width: 100%;
 		position: absolute;
-		margin-bottom: 0px;
-		padding-bottom: 0px;
+		bottom: 0;
+		left: 0;
 	}
