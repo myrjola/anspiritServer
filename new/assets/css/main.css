@@ -3229,11 +3229,6 @@
 		.w-col-6 {
 			width: 50%;
 		}
-		.w-row,
-		.w-container .w-row {
-			margin-left: 0;
-			margin-right: 0;
-		}
 		.w-container .w-row {
 			margin-left: -10px;
 			margin-right: -10px;
