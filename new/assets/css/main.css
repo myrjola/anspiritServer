@@ -3251,7 +3251,7 @@
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			position: relative;
-			top: -200px;
+			top: -100px;
 			left: 0px;
 			right: 0px;
 			width: 100%;
@@ -3260,6 +3260,9 @@
 			color: #fff;
 			margin-bottom: 100px;
 		}
+		.faqWallpaper h2{
+			font-size: 25px;
+		}
 		.footerFaq{
-			margin-bottom: -200px;
+			margin-bottom: -100px;
 		}
