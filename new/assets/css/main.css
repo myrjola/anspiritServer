@@ -3247,8 +3247,15 @@
 		}
 		.faqWallpaper{
 			background-image: url("http://pre13.deviantart.net/793d/th/pre/f/2015/096/a/1/infrared__2_by_anssilepikko-d8on99g.jpg");
-			background-position: 50% 50%;
+			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
+			position: absolute;
+			top: 0px;
+			z-index: 0;
+			left: 0px;
+			right: 0px;
+			width: 100%;
+			margin: 0;
 		}
