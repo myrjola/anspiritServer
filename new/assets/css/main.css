@@ -3263,6 +3263,8 @@
 	.mainFaq{
 		position: absolute;
 		top: 600px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.footerFaq{
 		width: 100%;
