@@ -3258,4 +3258,8 @@
 			width: 100%;
 			min-height: 600px;
 			margin: 0;
+			color: #fff;
+		}
+		.faqWallpaper h2{
+			font-size: 25px;
 		}
