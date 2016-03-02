@@ -3245,3 +3245,10 @@
 			margin-left: 0;
 			margin-right: 0;
 		}
+		.faqWallpaper{
+			background-image: url("http://pre13.deviantart.net/793d/th/pre/f/2015/096/a/1/infrared__2_by_anssilepikko-d8on99g.jpg");
+			background-position: 50% 50%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
