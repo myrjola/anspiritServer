@@ -3260,6 +3260,9 @@
 			color: #fff;
 			margin-bottom: 100px;
 		}
+		.mainFaq{
+			margin-top: -100px;
+		}
 		.faqWallpaper h2{
 			font-size: 25px !important;
 		}
