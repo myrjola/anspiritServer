@@ -3256,11 +3256,12 @@
 			left: 0px;
 			right: 0px;
 			width: 100%;
-			min-height: 600px;
+			height: 600px;
 			margin: 0;
 			color: #fff;
 			margin-bottom: 100px;
 		}
-		.faqWallpaper h2{
-			font-size: 30px;
-		}
+	.mainFaq{
+		position: absolute;
+		top: 600px;
+	}
