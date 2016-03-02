@@ -3267,4 +3267,6 @@
 		}
 		.footerFaq{
 			margin-bottom: -100px;
+			padding-bottom: -100px;
+			bottom: -100px;
 		}
