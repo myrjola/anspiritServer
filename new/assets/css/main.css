@@ -3242,7 +3242,7 @@
 		.faqWallpaper{
 			background-image: url("http://pre13.deviantart.net/793d/th/pre/f/2015/096/a/1/infrared__2_by_anssilepikko-d8on99g.jpg");
 			background-position: center;
-			background-size: cover;
+			background-size: cover;w
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			position: relative;
@@ -3255,7 +3255,7 @@
 			color: #fff;
 		}
 		.faqWallpaper h2{
-			font-size: 50px !important;
+			font-size: 60px !important;
 		}
 		.goAheadBtnFAQ{
 			margin-top: 50px;
