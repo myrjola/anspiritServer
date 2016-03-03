@@ -3269,7 +3269,7 @@
 		/* mobile */
 	@media screen and (max-width: 736px) {
 		.homePageLogoOnBar{
-			left: 100px !important;
+			left: 80px !important;
 			top: 2px !important;
 		}
 	}
