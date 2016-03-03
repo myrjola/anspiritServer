@@ -3266,3 +3266,11 @@
 		.footerFaq{
 			margin-bottom: -120px !important;
 		}
+		/* mobile */
+	@media screen and (max-width: 736px) {
+		.homePageLogoOnBar{
+			left: 100px;
+			top: 2px;
+			width: 
+		}
+	}
