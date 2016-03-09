@@ -42,8 +42,8 @@ body {
 }
 
 .logo {
-  width: 300px;
-  height: 100px;
+  width: 100px;
+  height: 20px;
   background: url('../../images/anspirit.ico') no-repeat;
   margin: auto auto;
 }
