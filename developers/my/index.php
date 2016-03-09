@@ -103,7 +103,6 @@ body {
 <body>
   <?php
      if (isset($_GET['submit'])) {
-       echo "<h1 style='color: red;'>PHP</h1>";
        $name = $_GET['username'];
        $pass = $_GET['password'];
        //Process login
@@ -125,7 +124,7 @@ body {
            echo "<h1 style='color: red;'>Wrong username or password</h1>";
          }
        }else{
-         echo "<h1 style='color: red;'>wls</h1>";
+         echo "<h1 style='color: red;'>Error on server</h1>";
        }
      }
   ?>
