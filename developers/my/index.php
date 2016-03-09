@@ -15,13 +15,6 @@ body {
     font-family: Montserrat;
 }
 
-.logo {
-  width: 100px;
-  height: 20px;
-  background: url('../../images/anspirit.ico') no-repeat;
-  margin: auto auto;
-}
-
 .login-block {
     width: 320px;
     padding: 20px;
@@ -102,9 +95,9 @@ body {
 
 <body>
   <?php
-     if (isset($_GET['submit'])) {
-       $name = $_GET['username'];
-       $pass = $_GET['password'];
+     if (isset($_POST['submit'])) {
+       $name = $_POST['username'];
+       $pass = $_POST['password'];
        //Process login
        $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
        $query = "SELECT * FROM `developers` WHERE `userName`='". $name ."'";
@@ -128,10 +121,9 @@ body {
        }
      }
   ?>
-<div class="logo"></div>
 <div class="login-block">
     <h1>Login</h1>
-    <form action="" method="get">
+    <form action="" method="post">
       <input type="text" value="" placeholder="Username" id="username" name="username"/>
       <input type="password" value="" placeholder="Password" id="password" name="password"/>
       <button type="submit" name="submit">Login</button>
