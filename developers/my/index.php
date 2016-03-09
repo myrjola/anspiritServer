@@ -101,6 +101,7 @@ body {
        //Process login
        $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
        $query = "SELECT * FROM `developers` WHERE `userName`='". $name ."'";
+       echo "<h1 style='green: red;'>".$query."</h1>";
        if($result = $mysqli -> query($query)){
          //Query executed
          if ($row = $result -> fetch_assoc()) {
