@@ -108,6 +108,7 @@ body {
            if ($pass == $row['password']) {
              //Done, everything is correct
              echo "<h1 style='color: green;'>Done</h1>";
+             //TODO set all cookies with developer data
            }else{
              //Wrong password
              echo "<h1 style='color: red;'>Wrong username or password</h1>";
@@ -129,6 +130,9 @@ body {
       <button type="submit" name="submit">Login</button>
     </form>
 </div>
+<footer>
+<img src="../../images/anspirit.ico" width="50px"/>
+</footer>
 </body>
 
 </html>
