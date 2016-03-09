@@ -132,9 +132,9 @@ body {
 <div class="login-block">
     <h1>Login</h1>
     <form action="" method="get">
-      <input type="text" value="" placeholder="Username" id="username" />
-      <input type="password" value="" placeholder="Password" id="password" />
-      <button type="submit" id="submit">Login</button>
+      <input type="text" value="" placeholder="Username" id="username" name="username"/>
+      <input type="password" value="" placeholder="Password" id="password" name="password"/>
+      <button type="submit" name="submit">Login</button>
     </form>
 </div>
 </body>
