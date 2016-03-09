@@ -1,29 +1,3 @@
-<?php
-   if (isset($_GET['submit'])) {
-     $name = $_GET['username'];
-     $pass = $_GET['password'];
-     //Process login
-     $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
-     $query = "SELECT * FROM `developers` WHERE `userName`='"+ $name +"'";
-     if($result = $mysqli -> query($query)){
-       //Query executed
-       if ($row = $result -> fetch_assoc()) {
-         //User found
-         if ($pass == $row['password']) {
-           //Done, everything is correct
-
-         }else{
-           //Wrong password
-           echo "<h1>Wrong password</h1>";
-         }
-       }else{
-         //Wrong username
-         echo "<h1>Wrong username</h1>";
-       }
-     }
-   }
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -127,7 +101,31 @@ body {
 </head>
 
 <body>
-
+  <?php
+     if (isset($_GET['submit'])) {
+       $name = $_GET['username'];
+       $pass = $_GET['password'];
+       //Process login
+       $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
+       $query = "SELECT * FROM `developers` WHERE `userName`='"+ $name +"'";
+       if($result = $mysqli -> query($query)){
+         //Query executed
+         if ($row = $result -> fetch_assoc()) {
+           //User found
+           if ($pass == $row['password']) {
+             //Done, everything is correct
+             echo "<h1 style='green: red;'>Done</h1>";
+           }else{
+             //Wrong password
+             echo "<h1 style='color: red;'>Wrong password</h1>";
+           }
+         }else{
+           //Wrong username
+           echo "<h1 style='color: red;'>Wrong username</h1>";
+         }
+       }
+     }
+  ?>
 <div class="logo"></div>
 <div class="login-block">
     <h1>Login</h1>
