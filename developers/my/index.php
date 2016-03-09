@@ -89,7 +89,11 @@ body {
 .login-block button:hover {
     background: #ff7b81;
 }
-
+footer{
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+}
 </style>
 </head>
 
@@ -131,7 +135,7 @@ body {
     </form>
 </div>
 <footer>
-<img src="../../images/anspirit.ico" width="50px"/>
+<img src="../../images/anspirit.ico" width="100px"/>
 </footer>
 </body>
 
