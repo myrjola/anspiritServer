@@ -2,7 +2,12 @@
    if (isset($_POST['submit'])) {
      $name = $_POST['username'];
      $pass = $_POST['password'];
-     //Process
+     //Process login
+     $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
+     $query = "SELECT * FROM `developers`";
+     if($result = $mysqli -> query($query)){
+       //Query executed
+     }
    }
 ?>
 
