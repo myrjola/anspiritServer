@@ -118,11 +118,11 @@ body {
              echo "<h1 style='green: red;'>Done</h1>";
            }else{
              //Wrong password
-             echo "<h1 style='color: red;'>Wrong password</h1>";
+             echo "<h1 style='color: red;'>Wrong username or password</h1>";
            }
          }else{
            //Wrong username
-           echo "<h1 style='color: red;'>Wrong username</h1>";
+           echo "<h1 style='color: red;'>Wrong username or password</h1>";
          }
        }else{
          echo "<h1 style='color: red;'>wls</h1>";
