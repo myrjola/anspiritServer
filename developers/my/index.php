@@ -108,7 +108,7 @@ body {
        $pass = $_GET['password'];
        //Process login
        $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
-       $query = "SELECT * FROM `developers` WHERE `userName`='"+ $name +"'";
+       $query = "SELECT * FROM `developers` WHERE `userName`='". $name ."'";
        if($result = $mysqli -> query($query)){
          //Query executed
          if ($row = $result -> fetch_assoc()) {
