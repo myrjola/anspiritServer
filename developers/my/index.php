@@ -31,8 +31,8 @@
 <meta charset="UTF-8">
 <meta name="description" content="IOT is our future. Everyday people create more and more smart devices. These devices are irreplaceable part of our lives. But how we use them? Every smart device means new app on your smartphone, desktop, smartwatch edc. Anspirit and qproject will connect all of them with each other using one simple ecosystem based on Rest API. Every device can control each other and get information from them.">
 <meta property="og:description" content="IOT is our future. Everyday people create more and more smart devices. These devices are irreplaceable part of our lives. But how we use them? Every smart device means new app on your smartphone, desktop, smartwatch edc. Anspirit and qproject will connect all of them with each other using one simple ecosystem based on Rest API. Every device can control each other and get information from them.">
-<link rel="shortcut icon" type="image/x-icon" href="../images/anspirit.ico">
-<link rel="apple-touch-icon" href="../images/anspirit.ico">
+<link rel="shortcut icon" type="image/x-icon" href="../../images/anspirit.ico">
+<link rel="apple-touch-icon" href="../../images/anspirit.ico">
 <title>Anspirit - Developer login</title>
 <style>
 body {
@@ -42,10 +42,10 @@ body {
 }
 
 .logo {
-    width: 100px;
-    height: 30px;
-    background: url('../../images/anspirit.ico') no-repeat;
-    margin: 30px auto;
+  width: 213px;
+  height: 36px;
+  background: url('http://i.imgur.com/fd8Lcso.png') no-repeat;
+  margin: 30px auto;
 }
 
 .login-block {
