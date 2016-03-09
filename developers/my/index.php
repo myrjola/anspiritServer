@@ -13,8 +13,8 @@ body {
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
     background: url('../../images/anspirit.ico') no-repeat;
     margin: 30px auto;
 }
