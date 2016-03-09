@@ -25,7 +25,7 @@
   <body>
 
     <footer>
-      <img src="../../../images/anspirit.ico" width="100px"/>
+      <a href="http://anspirit.org"><img src="../../../images/anspirit.ico" width="100px"/></a>
     </footer>
   </body>
 </html>
