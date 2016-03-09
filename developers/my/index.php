@@ -1,3 +1,9 @@
+<?php
+   if (isset($_POST['submit'])) {
+     
+   }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -102,9 +108,11 @@ body {
 <div class="logo"></div>
 <div class="login-block">
     <h1>Login</h1>
-    <input type="text" value="" placeholder="Username" id="username" />
-    <input type="password" value="" placeholder="Password" id="password" />
-    <button>Login</button>
+    <form action="" method="post">
+      <input type="text" value="" placeholder="Username" id="username" />
+      <input type="password" value="" placeholder="Password" id="password" />
+      <button type="submit">Login</button>
+    </form>
 </div>
 </body>
 
