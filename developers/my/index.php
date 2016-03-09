@@ -124,6 +124,8 @@ body {
            //Wrong username
            echo "<h1 style='color: red;'>Wrong username</h1>";
          }
+       }else{
+         echo "<h1 style='color: red;'>wls</h1>";
        }
      }
   ?>
