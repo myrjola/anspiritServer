@@ -1,7 +1,7 @@
 <?php
-   if (isset($_POST['submit'])) {
-     $name = $_POST['username'];
-     $pass = $_POST['password'];
+   if (isset($_GET['submit'])) {
+     $name = $_GET['username'];
+     $pass = $_GET['password'];
      //Process login
      $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
      $query = "SELECT * FROM `developers` WHERE `userName`='"+ $name +"'";
@@ -131,7 +131,7 @@ body {
 <div class="logo"></div>
 <div class="login-block">
     <h1>Login</h1>
-    <form action="" method="post">
+    <form action="" method="get">
       <input type="text" value="" placeholder="Username" id="username" />
       <input type="password" value="" placeholder="Password" id="password" />
       <button type="submit" id="submit">Login</button>
