@@ -43,7 +43,7 @@ body {
 
 .logo {
   width: 213px;
-  height: 36px;
+  height: 50px;
   background: url('../../images/anspirit.ico') no-repeat;
   margin: 30px auto;
 }
