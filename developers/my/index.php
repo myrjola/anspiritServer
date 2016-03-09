@@ -102,6 +102,7 @@ body {
 
 <body>
   <?php
+  echo "<h1 style='color: red;'>PHP</h1>";
      if (isset($_GET['submit'])) {
        $name = $_GET['username'];
        $pass = $_GET['password'];
