@@ -7,7 +7,7 @@
      $query = "SELECT * FROM `developers` WHERE `userName`='"+ $name +"'";
      if($result = $mysqli -> query($query)){
        //Query executed
-       if ($row = $result -> fetch_assoc();) {
+       if ($row = $result -> fetch_assoc()) {
          //User found
          if ($pass == $row['password']) {
            //Done, everything is correct
