@@ -44,7 +44,7 @@ body {
 .logo {
   width: 213px;
   height: 36px;
-  background: url('http://i.imgur.com/fd8Lcso.png') no-repeat;
+  background: url('../../images/anspirit.ico') no-repeat;
   margin: 30px auto;
 }
 
