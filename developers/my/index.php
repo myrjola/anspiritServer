@@ -45,7 +45,7 @@ body {
   width: 50px;
   height: 50px;
   background: url('../../images/anspirit.ico') no-repeat;
-  margin: 30px auto;
+  margin: auto auto;
 }
 
 .login-block {
