@@ -107,7 +107,7 @@ body {
            //User found
            if ($pass == $row['password']) {
              //Done, everything is correct
-             echo "<h1 style='green: red;'>Done</h1>";
+             echo "<h1 style='color: green;'>Done</h1>";
            }else{
              //Wrong password
              echo "<h1 style='color: red;'>Wrong username or password</h1>";
