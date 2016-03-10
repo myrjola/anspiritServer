@@ -46,7 +46,7 @@
       background-color: rgba(0, 0, 0, 0.10);
       top: 0px;
       max-width: 800px;
-      height: 100%;
+      height: 1000px;
       overflow-y: scroll;
       margin-left: auto;
       margin-right: auto;
