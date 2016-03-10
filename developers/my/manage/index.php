@@ -58,6 +58,7 @@
       margin: 0px 0px;
     }
     .menuBtn{
+      margin-left: 0px;
       width: 100%;
       font-size: 18px;
       color: #fff;
