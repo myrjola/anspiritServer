@@ -42,6 +42,14 @@
         background-size: cover;
         font-family: Montserrat;
     }
+    .content{
+      background-color: rgba(0, 0, 0, 0.28);
+      position: absolute;
+      top: 0px;
+      margin: auto auto;
+      max-width: 800px;
+      overflow-y: scroll;
+    }
     footer{
       position: absolute;
       bottom: 100px;
@@ -50,7 +58,9 @@
     </style>
   </head>
   <body>
+    <div class="content">
 
+    </div>
     <footer>
       <a href="http://anspirit.org"><img src="../../../images/anspirit.ico" width="100px"/></a>
     </footer>
