@@ -44,9 +44,9 @@
     }
     .content{
       background-color: rgba(0, 0, 0, 0.10);
-      top: 0px;
+      top: 10px;
       max-width: 800px;
-      height: 1000px;
+      height: calc(100% - 20px);
       overflow-y: scroll;
       margin-left: auto;
       margin-right: auto;
