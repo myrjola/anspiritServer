@@ -61,13 +61,13 @@
       width: 100%;
       font-size: 18px;
       color: #fff;
-      background-color: #2e2e2e;
+      background-color: rgba(#2e2e2e, 0.8);
       padding-top: 20px;
       padding-bottom: 20px;
       text-align: center;
     }
-    .menuBtn{
-      background-color: #444444;
+    .menuBtn:hover{
+      background-color: #2e2e2e;
     }
     .menuLabel{
       font-size: 18px;
