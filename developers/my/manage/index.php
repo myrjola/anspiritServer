@@ -57,6 +57,16 @@
       overflow-y: scroll;
       margin: 0px 0px;
     }
+    .menuBtn{
+      width: 100%;
+      font-size: 18px;
+      color: #fff;
+      background-color: #202020;
+    }
+    .menuLabel{
+      font-size: 18px;
+      color: #fff;
+    }
     footer{
       position: absolute;
       bottom: 10px;
