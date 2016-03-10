@@ -45,10 +45,10 @@
     .content{
       position: absolute;
       background-color: rgba(0, 0, 0, 0.10);
-      width: 500px;
+      width: 600px;
       height: 100%;
       overflow-y: scroll;
-      left: calc(100% - 250px);
+      left: calc(100% - 300px);
     }
     .menu{
       background-color: rgba(0, 0, 0, 0.20);
