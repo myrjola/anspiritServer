@@ -46,8 +46,10 @@
       background-color: rgba(0, 0, 0, 0.28);
       position: absolute;
       top: 0px;
-      margin: auto auto;
-      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto; 
+      width: 800px;
+      height: 100%;
       overflow-y: scroll;
     }
     footer{
