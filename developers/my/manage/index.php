@@ -23,6 +23,9 @@
      //No access for current user here!
      $newURL = 'http://anspirit.org/developers';
      header('Location: '.$newURL);
+   }else{
+     $page = true;
+     //TODO get needed data from database
    }
 ?>
 <!DOCTYPE html>
@@ -42,18 +45,14 @@
         background-size: cover;
         font-family: Montserrat;
     }
-    .content{
-      position: absolute;
+    .tablecontent{
       background-color: rgba(0, 0, 0, 0.10);
-      width: 600px;
-      height: 100%;
-      left: calc(100% - 300px);
     }
     .menu{
       background-color: rgba(0, 0, 0, 0.20);
       position: absolute;
       top: 0px;
-        width: 250px;
+      width: 250px;
       height: 100%;
       overflow-y: scroll;
       margin: 0px 0px;
@@ -69,6 +68,9 @@
   <body>
     <div class="menu">
       <h1>Developer Panel.</h1>
+      <div class="developerBalance menuLabel">Balance: $ 0.00</div>
+      <div class="newExt menuBtn">My Extensions</div>
+      <div class="newExt menuBtn">New Extension</div>
     </div>
     <div class="content">
 
