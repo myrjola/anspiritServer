@@ -62,7 +62,7 @@
       width: 100%;
       font-size: 18px;
       color: #fff;
-      background-color: rgba(#2e2e2e, 0.8);
+      background-color: rgba(46, 46, 46, 0.7);
       padding-top: 20px;
       padding-bottom: 20px;
       text-align: center;
