@@ -16,6 +16,7 @@
            setcookie('password', $pass);
            setcookie('username', $name);
            //redirect to control panel
+           $newURL = "./manage/"
            header('Location: '.$newURL);
          }else{
            //Wrong password
