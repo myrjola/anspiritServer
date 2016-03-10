@@ -1,3 +1,35 @@
+<?php
+   if (isset($_POST['submit'])) {
+     $name = $_POST['username'];
+     $pass = $_POST['password'];
+     //Process login
+     $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
+     $query = "SELECT * FROM `developers` WHERE `userName`='". $name ."'";
+     if($result = $mysqli -> query($query)){
+       //Query executed
+       if ($row = $result -> fetch_assoc()) {
+         //User found
+         if ($pass == $row['password']) {
+           //Done, everything is correct
+           echo "<h1 style='color: green;'>Done</h1>";
+           //set all cookies with developer data
+           setcookie('password', $pass);
+           setcookie('username', $name);
+           //redirect to control panel
+           header('Location: '.$newURL);
+         }else{
+           //Wrong password
+           echo "<h1 style='color: red;'>Wrong username or password</h1>";
+         }
+       }else{
+         //Wrong username
+         echo "<h1 style='color: red;'>Wrong username or password</h1>";
+       }
+     }else{
+       echo "<h1 style='color: red;'>Error on server</h1>";
+     }
+   }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -98,34 +130,6 @@ footer{
 </head>
 
 <body>
-  <?php
-     if (isset($_POST['submit'])) {
-       $name = $_POST['username'];
-       $pass = $_POST['password'];
-       //Process login
-       $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
-       $query = "SELECT * FROM `developers` WHERE `userName`='". $name ."'";
-       if($result = $mysqli -> query($query)){
-         //Query executed
-         if ($row = $result -> fetch_assoc()) {
-           //User found
-           if ($pass == $row['password']) {
-             //Done, everything is correct
-             echo "<h1 style='color: green;'>Done</h1>";
-             //TODO set all cookies with developer data
-           }else{
-             //Wrong password
-             echo "<h1 style='color: red;'>Wrong username or password</h1>";
-           }
-         }else{
-           //Wrong username
-           echo "<h1 style='color: red;'>Wrong username or password</h1>";
-         }
-       }else{
-         echo "<h1 style='color: red;'>Error on server</h1>";
-       }
-     }
-  ?>
 <div class="login-block">
     <h1>Login</h1>
     <form action="" method="post">
