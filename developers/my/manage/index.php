@@ -18,11 +18,11 @@
          }
        }
      }
-     if (!$granted) {
-       //No access for current user here!
-       $newURL = 'http://anspirit.org/developers';
-       header('Location: '.$newURL);
-     }
+   }
+   if (!$granted) {
+     //No access for current user here!
+     $newURL = 'http://anspirit.org/developers';
+     header('Location: '.$newURL);
    }
 ?>
 <!DOCTYPE html>
