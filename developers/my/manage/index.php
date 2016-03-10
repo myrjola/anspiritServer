@@ -61,7 +61,13 @@
       width: 100%;
       font-size: 18px;
       color: #fff;
-      background-color: #202020;
+      background-color: #2e2e2e;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    .menuBtn{
+      background-color: #444444;
     }
     .menuLabel{
       font-size: 18px;
