@@ -43,10 +43,10 @@
         font-family: Montserrat;
     }
     .content{
+      position: relative;
       background-color: rgba(0, 0, 0, 0.10);
-      top: 10px;
       max-width: 800px;
-      height: calc(100% - 20px);
+      height: 100%;
       overflow-y: scroll;
       margin-left: auto;
       margin-right: auto;
@@ -62,8 +62,8 @@
     }
     footer{
       position: absolute;
-      bottom: 100px;
-      left: 100px;
+      bottom: 10px;
+      left: 10px;
     }
     h1 { color: #dadada; font-family: 'Helvetica Neue', sans-serif; font-size: 20px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
     </style>
