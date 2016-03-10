@@ -43,7 +43,8 @@
         font-family: Montserrat;
     }
     .content{
-      background-color: rgba(0, 0, 0, 0.28);
+      display:block;
+      background-color: rgba(0, 0, 0, 0.20);
       position: absolute;
       top: 0px;
       max-width: 1000px;
