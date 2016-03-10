@@ -67,6 +67,7 @@
       padding-top: 20px;
       padding-bottom: 20px;
       text-align: center;
+      cursor: pointer;
     }
     .menuBtn:hover{
       background-color: #2e2e2e;
