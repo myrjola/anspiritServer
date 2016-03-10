@@ -55,7 +55,7 @@
       background-color: rgba(0, 0, 0, 0.20);
       position: absolute;
       top: 0px;
-      width: 200px;
+      width: 250px;
       height: 100%;
       overflow-y: scroll;
       margin: 0px 0px;
@@ -65,15 +65,15 @@
       bottom: 100px;
       left: 100px;
     }
-    h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+    h1 { color: #dadada; font-family: 'Helvetica Neue', sans-serif; font-size: 20px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
     </style>
   </head>
   <body>
     <div class="menu">
-
+      <h1>Developer Panel.</h1>
     </div>
     <div class="content">
-      <h1>Developer Panel.</h1>
+
     </div>
     <footer>
       <a href="http://anspirit.org"><img src="../../../images/anspirit.ico" width="100px"/></a>
