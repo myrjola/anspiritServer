@@ -47,14 +47,13 @@
       background-color: rgba(0, 0, 0, 0.10);
       width: 600px;
       height: 100%;
-      overflow-y: scroll;
       left: calc(100% - 300px);
     }
     .menu{
       background-color: rgba(0, 0, 0, 0.20);
       position: absolute;
       top: 0px;
-      width: 250px;
+        width: 250px;
       height: 100%;
       overflow-y: scroll;
       margin: 0px 0px;
