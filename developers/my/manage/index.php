@@ -43,13 +43,12 @@
         font-family: Montserrat;
     }
     .content{
-      position: relative;
+      position: absolute;
       background-color: rgba(0, 0, 0, 0.10);
-      max-width: 800px;
+      width: 500px;
       height: 100%;
       overflow-y: scroll;
-      margin-left: auto;
-      margin-right: auto;
+      left: calc(100% - 250px);
     }
     .menu{
       background-color: rgba(0, 0, 0, 0.20);
