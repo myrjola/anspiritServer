@@ -43,7 +43,7 @@
         font-family: Montserrat;
     }
     .content{
-      background-color: rgba(0, 0, 0, 0.20);
+      background-color: rgba(0, 0, 0, 0.10);
       top: 0px;
       max-width: 800px;
       height: 100%;
@@ -52,7 +52,13 @@
       margin-right: auto;
     }
     .menu{
-
+      background-color: rgba(0, 0, 0, 0.20);
+      position: absolute;
+      top: 0px;
+      width: 200px;
+      height: 100%;
+      overflow-y: scroll;
+      margin: 0px 0px;
     }
     footer{
       position: absolute;
@@ -64,7 +70,7 @@
   </head>
   <body>
     <div class="menu">
-      
+
     </div>
     <div class="content">
       <h1>Developer Panel.</h1>
