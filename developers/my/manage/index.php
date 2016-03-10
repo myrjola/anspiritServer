@@ -55,11 +55,12 @@
       bottom: 100px;
       left: 100px;
     }
+    h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 275px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
     </style>
   </head>
   <body>
     <div class="content">
-
+      <h1>Developer Panel.</h1>
     </div>
     <footer>
       <a href="http://anspirit.org"><img src="../../../images/anspirit.ico" width="100px"/></a>
