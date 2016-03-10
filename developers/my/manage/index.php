@@ -46,18 +46,18 @@
       background-color: rgba(0, 0, 0, 0.28);
       position: absolute;
       top: 0px;
-      margin-left: auto;
-      margin-right: auto; 
-      width: 800px;
+      max-width: 1000px;
       height: 100%;
       overflow-y: scroll;
+      margin-left: auto;
+      margin-right: auto;
     }
     footer{
       position: absolute;
       bottom: 100px;
       left: 100px;
     }
-    h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 275px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+    h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
     </style>
   </head>
   <body>
