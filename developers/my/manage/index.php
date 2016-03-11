@@ -88,6 +88,7 @@
       $("document").ready(function(){
         $(".content").load("./my.php", function(){
           //Content loaded
+          alert('loaded');
         });
       });
     </script>
