@@ -41,17 +41,16 @@
     <title>Anspirit - Developer login</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <style media="screen">
-    body {
+    body{
         background: url('http://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center;
         background-size: cover;
         font-family: Montserrat;
     }
     .content{
-      max-width: 800px;
       position: absolute;
-      height: 100%;
-      margin-left: auto;
-      margin-right: auto;
+      width: 700px;
+      left: 300px;
+      height: 1000px;
     }
     .tablecontent{
       background-color: rgba(0, 0, 0, 0.10);
