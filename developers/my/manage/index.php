@@ -24,7 +24,6 @@
      $newURL = 'http://anspirit.org/developers';
      header('Location: '.$newURL);
    }else{
-     $page = true;
      //TODO get needed data from database
    }
 ?>
@@ -50,7 +49,8 @@
       position: absolute;
       width: 700px;
       left: 300px;
-      height: 1000px;
+      height: 800px;
+      overflow: scroll;
     }
     .tablecontent{
       background-color: rgba(0, 0, 0, 0.10);
