@@ -92,7 +92,7 @@
     </style>
     <script type="text/javascript">
       $("document").ready(function(){
-        $(".content").load("./my.php", function(){
+        $(".content").load("my.php", function(){
           //Content loaded
 
         });
