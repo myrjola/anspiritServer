@@ -94,7 +94,7 @@
     </style>
     <script type="text/javascript">
       $("document").ready(function(){
-        $(".content").load("my.html", function(){
+        $(".content").load("./my.html", function(){
           //Content loaded
 
         });

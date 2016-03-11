@@ -1,50 +1,52 @@
  <html>
   <head>
-  <style media="screen">
-    .extensions{
-      background-color: rgba(189, 189, 189, 0.2);
+    <style>
+      .extensions{
+        background-color: rgba(189, 189, 189, 0.2);
 
-    }
-    .inform_lbl{
-      width: 100%;
-      height: 50px;
-      color: white;
-      font-size: 20px;
-      padding-left: 50px;
-      margin-top: 100px;
-    }
-  </style>
-  <script type="text/javascript">
-    $("document").ready(function(){
-      //TODO
-      //Get extension list
-      //drawTable(data)
-    });
-    var drawTable = function(data) {
-      if (Object.keys(data).length > 0){
-          for (var i = 0; i < data.length; i++) {
-              drawRow(data[i]);
-          }
-      }else{
-        $(".inform_lbl").append('<h3 style="position: relative; left: 20%;">You dont have extensions yet</h3>');
       }
-    }
-    var drawRow = function(rowData) {
-        var row = $("<tr />")
-        $(".extensions").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
-        row.append($("<td align='center'><img src='" + rowData.icon + "' height='50px' width='50px'></td>"));
-        row.append($("<td align='center'>" + rowData.name + "</td>"));
-        row.append($("<td align='center'>" + rowData.description + "</td>"));
-        row.append($("<td align='center'><button class='deleteBtn' onclick='window.deleteExtension(\"" + rowData.id + "\", \"" + rowData.name + "\")'>Delete</button></td>"));
-    }
-  </script>
+      .inform_lbl{
+        width: 100%;
+        height: 50px;
+        color: white;
+        font-size: 20px;
+        padding-left: 50px;
+        margin-top: 100px;
+      }
+    </style>
+    <script type="text/javascript">
+      $("document").ready(function(){
+        //TODO
+        //Get extension list
+        //drawTable(data)
+      });
+      /*
+      var drawTable = function(data) {
+        if (Object.keys(data).length > 0){
+            for (var i = 0; i < data.length; i++) {
+                drawRow(data[i]);
+            }
+        }else{
+          $(".inform_lbl").append('<h3 style="position: relative; left: 20%;">You dont have extensions yet</h3>');
+        }
+      };
+      var drawRow = function(rowData) {
+          var row = $("<tr />")
+          $(".extensions").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+          row.append($("<td align='center'><img src='" + rowData.icon + "' height='50px' width='50px'></td>"));
+          row.append($("<td align='center'>" + rowData.name + "</td>"));
+          row.append($("<td align='center'>" + rowData.description + "</td>"));
+          row.append($("<td align='center'><button class='deleteBtn' onclick='window.deleteExtension(\"" + rowData.id + "\", \"" + rowData.name + "\")'>Delete</button></td>"));
+      };
+      */
+    </script>
   </head>
   <body>
-  <h1>My Extensions</h1>
-  <table align="center" class="extensions">
+    <h1>My Extensions</h1>
+    <table align="center" class="extensions">
 
-  </table>
-  <br>
-  <div class="inform_lbl"></div>
+    </table>
+    <br>
+    <div class="inform_lbl"></div>
   </body>
- </html>
+</html>
