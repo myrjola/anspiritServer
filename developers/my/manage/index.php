@@ -47,7 +47,8 @@
         font-family: Montserrat;
     }
     .content{
-      max-width: 800;
+      max-width: 800px;
+      position: absolute;
       height: 100%;
       margin-left: auto;
       margin-right: auto;
