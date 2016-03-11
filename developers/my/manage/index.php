@@ -1,11 +1,12 @@
 <?php
+    //Setup database connection
+    $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
     //Check access
    if (isset($_COOKIE['username'])) {
      $name = $_COOKIE['username'];
      $pass = $_COOKIE['password'];
      $granted = false;
      //Process login
-     $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
      $query = "SELECT * FROM `developers` WHERE `userName`='". $name ."'";
      if($result = $mysqli -> query($query)){
        //Query executed
@@ -25,6 +26,7 @@
      header('Location: '.$newURL);
    }else{
      //TODO get needed data from database
+     $query = "SELECT * FROM `extensions` WHERE `developer` = '" . $ . "'";
    }
 ?>
 <!DOCTYPE html>
