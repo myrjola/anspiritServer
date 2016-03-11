@@ -20,7 +20,6 @@
         //Get extension list
         //drawTable(data)
       });
-      /*
       var drawTable = function(data) {
         if (Object.keys(data).length > 0){
             for (var i = 0; i < data.length; i++) {
@@ -29,7 +28,7 @@
         }else{
           $(".inform_lbl").append('<h3 style="position: relative; left: 20%;">You dont have extensions yet</h3>');
         }
-      };
+      }
       var drawRow = function(rowData) {
           var row = $("<tr />")
           $(".extensions").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
@@ -37,8 +36,7 @@
           row.append($("<td align='center'>" + rowData.name + "</td>"));
           row.append($("<td align='center'>" + rowData.description + "</td>"));
           row.append($("<td align='center'><button class='deleteBtn' onclick='window.deleteExtension(\"" + rowData.id + "\", \"" + rowData.name + "\")'>Delete</button></td>"));
-      };
-      */
+      }
     </script>
   </head>
   <body>

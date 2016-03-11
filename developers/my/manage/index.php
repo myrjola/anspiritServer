@@ -26,7 +26,7 @@
      header('Location: '.$newURL);
    }else{
      //TODO get needed data from database
-     $query = "SELECT * FROM `extensions` WHERE `developer` = '" . $ . "'";
+     $query = "SELECT * FROM `extensions` WHERE `developer` = '" . $_COOKIE['id'] . "'";
    }
 ?>
 <!DOCTYPE html>
