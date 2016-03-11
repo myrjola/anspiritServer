@@ -39,6 +39,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../../../images/anspirit.ico">
     <link rel="apple-touch-icon" href="../../../images/anspirit.ico">
     <title>Anspirit - Developer login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <style media="screen">
     body {
         background: url('http://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center;
@@ -64,8 +65,8 @@
       font-size: 18px;
       color: #fff;
       background-color: rgba(46, 46, 46, 0.7);
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
       text-align: center;
       cursor: pointer;
     }
@@ -83,6 +84,13 @@
     }
     h1 { color: #dadada; font-family: 'Helvetica Neue', sans-serif; font-size: 20px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
     </style>
+    <script type="text/javascript">
+      $("document").ready(function(){
+        $(".content").load("./my.php", function(){
+          //Content loaded
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="menu">

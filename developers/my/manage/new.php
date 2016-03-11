@@ -6,3 +6,4 @@
     header('Location: '.$newURL);
   }
  ?>
+ <h1>New Extension</h1>
