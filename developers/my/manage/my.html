@@ -31,7 +31,7 @@
     }
     var drawRow = function(rowData) {
         var row = $("<tr />")
-        $(".extensions tbody").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+        $(".extensions").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
         row.append($("<td align='center'><img src='" + rowData.icon + "' height='50px' width='50px'></td>"));
         row.append($("<td align='center'>" + rowData.name + "</td>"));
         row.append($("<td align='center'>" + rowData.description + "</td>"));
