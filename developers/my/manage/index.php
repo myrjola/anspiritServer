@@ -46,6 +46,12 @@
         background-size: cover;
         font-family: Montserrat;
     }
+    .content{
+      max-width: 800;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .tablecontent{
       background-color: rgba(0, 0, 0, 0.10);
     }
@@ -88,7 +94,7 @@
       $("document").ready(function(){
         $(".content").load("./my.php", function(){
           //Content loaded
-          alert('loaded');
+
         });
       });
     </script>
