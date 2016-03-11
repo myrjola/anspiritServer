@@ -42,7 +42,7 @@
     <title>Anspirit - Developer login</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <style media="screen">
-    body{
+    .main{
         background: url('http://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center;
         background-size: cover;
         font-family: Montserrat;
@@ -101,7 +101,7 @@
       });
     </script>
   </head>
-  <body>
+  <body class="main">
     <div class="menu">
       <h1>Developer Panel.</h1>
       <div class="developerBalance menuLabel">Balance: $ 0.00</div>
