@@ -49,6 +49,8 @@
     <script type="text/javascript">
       //Setup dropzone
       var Dropzone = require("dropzone");
+      // Dropzone class:
+      var myDropzone = new Dropzone("div#fileUpload", { url: "/file/post"});
 
       //Update input field values with real data
       $("document").ready(function(){
@@ -64,12 +66,7 @@
       Price ($0 - ...): <br>
       <input type="number" name="price" class="field price"><br>
       Files: <br>
-      <form action="/file-upload" class="dropzone">
-        <div class="fallback">
-          <input name="file" type="file" multiple />
-        </div>
-      </form>
-      <br>
+      <div id="fileUpload"></div><br>
       Icon link: <br>
       <input type="number" name="price" class="field icon"><br>
 
