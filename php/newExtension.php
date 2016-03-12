@@ -3,7 +3,7 @@
   $price = $_POST['price'];
   $description = $_POST['description'];
   $pathToExt = $_POST['pathToExt'];
-  $icon = $_POST['icon']
+  $icon = $_POST['icon'];
   $devId = $_POST['devId'];
   $devPassword = $_POST['devPassword'];
 
