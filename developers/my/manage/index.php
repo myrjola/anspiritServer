@@ -25,8 +25,7 @@
      $newURL = 'http://anspirit.org/developers';
      header('Location: '.$newURL);
    }else{
-     //TODO get needed data from database
-     $query = "SELECT * FROM `extensions` WHERE `developer` = '" . $_COOKIE['id'] . "'";
+     //Access granted
    }
 ?>
 <!DOCTYPE html>

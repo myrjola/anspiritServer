@@ -2,6 +2,30 @@
   //Get all data for extension to edit
   //extension id = $_GET['extension'];
   //extension name = $_GET['name'];
+  if(isset($_GET['extension']) && isset($_GET['name'])){
+    //Request recieved
+    //Get data for extension to insert in inputs
+    $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
+    $query = "SELECT * FROM `extensions` WHERE `id` = " . $_GET['extension'];
+    if($result = $mysqli -> query($query)){
+      if($row = $result -> fetch_assoc()){
+        //$row is extension from database
+        $name = $row['name'];
+        $price = $row['price'];
+        $pathToExt = $row['pathToExt'];
+        $linkToIcon = $row['icon'];
+        $description = $row['description'];
+      }else{
+        //No extension found
+      }
+    }else{
+      //failed to execute query
+    }
+  }else{
+    //no request
+    //redirect
+    header("Location: http://anspirit.org");
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -48,7 +72,7 @@
     <script type="text/javascript">
       //Update input field values with real data
       $("document").ready(function(){
-        $(".name").val("Name");
+        $(".name").val("<?php echo $name ?>");
       });
     </script>
   </head>
