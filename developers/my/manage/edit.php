@@ -18,11 +18,11 @@
         background: url('http://alexgurghis.com/themes/vetro/wp-content/uploads/2013/05/bg3.jpg') no-repeat fixed center center;
         background-size: cover;
         font-family: Montserrat;
-        font-size: 15px;
+        font-size: 20px;
       }
       h1{
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
       }
       input{
         margin-top: 5px;
@@ -40,7 +40,7 @@
         height: 30px;
         font-size: 20px;
         border-radius: 0px;
-        background-color: rgb(4, 184, 0);
+        background-color: rgba(0, 133, 255, 0.7);
         color: rgb(40, 40, 40);
         width: 200px;
         margin-left: calc(50% - 100px);
