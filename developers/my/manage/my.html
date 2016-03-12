@@ -42,7 +42,7 @@
         //drawTable(data)
         var developer = getCookie("id");//Get cookie id
         $.ajax({
-            type: "get",
+            type: "post",
             url: '/php/developersExtensions.php',
             data: {'id': developer},
             success: function(data){
