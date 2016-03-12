@@ -1,5 +1,4 @@
 <?php
-  if(isset($_POST['devId']) && isset($_POST['devPassword']) && isset($_POST['extensionId']) && isset($_POST['extensionName'])){
     //Got request to update extension with id $_POST['extensionId'];
     //Set data to variables
     $devId = $_POST['devId'];
@@ -57,6 +56,5 @@
         echo "No developer found";
       }
     }
-  }
   echo "Hello";
 ?>
