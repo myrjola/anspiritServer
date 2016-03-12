@@ -50,7 +50,7 @@
       //Setup dropzone
       var Dropzone = require("dropzone");
       // Dropzone class:
-      var myDropzone = new Dropzone("div#fileUpload";
+      var myDropzone = new Dropzone("div#fileUpload");
 
       //Update input field values with real data
       $("document").ready(function(){
