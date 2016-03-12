@@ -10,7 +10,7 @@
     <title>Edit</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <style media="screen">
-      input .field{
+      .field{
         width: 100%;
         height: 30px;
         font-size: 20px;
@@ -18,7 +18,7 @@
         background-color: rgb(200, 200, 200);
         color: rgb(40, 40, 40);
       }
-      input .submit{
+      .submit{
         height: 30px;
         font-size: 20px;
         border-radius: 0px;
