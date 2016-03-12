@@ -30,7 +30,7 @@
       .field{
         margin: 0px;
         width: 100%;
-        height: 25px;
+        height: 20px;
         font-size: 15px;
         border-radius: 0px;
         background: #f4f4f4;
