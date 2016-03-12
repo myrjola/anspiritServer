@@ -113,9 +113,9 @@
       <input type="url" name="icon" class="field icon"><br>
 
       <!-- Hidden inputs -->
-      <input type="hidden" name="devId">
-      <input type="hidden" name="devPassword">
-      <input type="hidden" name="extensionId">
+      <input type="hidden" class="devId" name="devId">
+      <input type="hidden" class="devPassword" name="devPassword">
+      <input type="hidden" class="extensionId" name="extensionId">
       <!-- Hidden inputs end -->
 
       <input type="submit" value="Update" class="submit">
