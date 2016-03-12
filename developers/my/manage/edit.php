@@ -66,7 +66,7 @@
       Price ($0 - ...): <br>
       <input type="number" name="price" class="field price"><br>
       Files: <br>
-      <div id="fileUpload"></div><br>
+      <br>
       Icon link: <br>
       <input type="number" name="price" class="field icon"><br>
 
