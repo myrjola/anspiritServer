@@ -59,6 +59,13 @@
         background: #f4f4f4;
         color: rgb(40, 40, 40);
       }
+      textarea{
+        background: #f4f4f4;
+        color: rgb(40, 40, 40);
+        font-size: 15px;
+        margin-left: -5px;
+        width: 100%; 
+      }
       .submit{
         height: 30px;
         font-size: 20px;
@@ -86,7 +93,7 @@
       Name: <br>
       <input type="text" name="name" class="field name"><br>
       Description: <br>
-      <textarea name="description" rows="8" style="margin-left: -5px; width: 100%; "class="description"></textarea><br>
+      <textarea name="description" rows="8" class="description"></textarea><br>
       Price ($0 - ...): <br>
       <input type="number" name="price" class="field price"><br>
       Files (link to hosted folder): <br>
