@@ -16,6 +16,7 @@
         background: url('http://www.walldevil.com/wallpapers/w08/gradients-simple-background-light-colorful-abstract.jpg') no-repeat fixed center center;
         background-size: cover;
         font-family: Montserrat;
+        font-size: 15px;
       }
       h1{
         text-align: center;
@@ -50,6 +51,7 @@
   <body>
     <h1>Edit extension</h1>
     <form class="" action="/php/editExtension.php" method="post">
+      Name: <br>
       <input type="text" name="name" class="field"><br>
 
       <!-- Hidden inputs -->
