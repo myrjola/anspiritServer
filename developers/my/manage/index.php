@@ -94,7 +94,15 @@
       $("document").ready(function(){
         $(".content").load("./my.html", function(){
           //Content loaded
-
+          $(".myExt").click(function(){
+            $(".content").load("./my.html");
+          });
+          $(".newExt").click(function(){
+            $(".content").load("./new.html");
+          });
+          $("settings").click(function(){
+            alert("Not yet available!")
+          });
         });
       });
     </script>
@@ -103,9 +111,9 @@
     <div class="menu">
       <h1>Developer Panel.</h1>
       <div class="developerBalance menuLabel">Balance: $ 0.00</div>
-      <div class="newExt menuBtn">My Extensions</div>
+      <div class="myExt menuBtn">My Extensions</div>
       <div class="newExt menuBtn">New Extension</div>
-      <div class="newExt menuBtn">Settings</div>
+      <div class="settings menuBtn">Settings</div>
     </div>
     <div class="content">
 
