@@ -35,6 +35,22 @@
        margin-left: calc(50% - 100px);
      }
    </style>
+   <script type="text/javascript">
+    $("document").ready(function(){
+      $(".devPassword").val(getCookie("password"));
+      $(".devId").val(getCookie("id"));
+    });
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
+   </script>
  </head>
  <body>
    <h1>New Extensions</h1>
@@ -86,6 +102,10 @@
       </td>
     </tr>
    </table>
+   <!-- Hidden inputs -->
+   <input type="hidden" class="devId" name="devId">
+   <input type="hidden" class="devPassword" name="devPassword">
+   <!-- Hidden inputs end -->
   </form>
  </body>
  </html>
