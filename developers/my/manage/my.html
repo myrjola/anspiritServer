@@ -43,7 +43,7 @@
         var developer = getCookie("id");//Get cookie id
         $.ajax({
             type: "get",
-            url: 'http://anspirit.org/php/developersExtensions.php',
+            url: '/php/developersExtensions.php',
             data: {'id': developer},
             success: function(data){
               drawTable(data)
