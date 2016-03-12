@@ -89,7 +89,24 @@
           row.append($("<td align='center'><button class='deleteBtn' onclick='window.deleteExtension(\"" + rowData.id + "\", \"" + rowData.name + "\")'>Remove</button></td>"));
       }
       window.deleteExtension = function(id, name){
-        alert("Delete " + name);
+        var r = confirm("Are you sure, you want to remove " + name + "?");
+        if (r == true) {
+            //Delete
+            $.ajax({
+              type: "post",
+              url: '/php/removeExtension.php',
+              data: {'devId': getCookie('id'), 'devPassword': getCookie('password'), 'extensionId': id},
+              success: function(data){
+                drawTable(data)
+              },
+              error: function(a, error){
+                console.error(error);
+              },
+              dataType: "json"
+            });
+        } else {
+            //Cancel
+        }
       }
       window.editExtension = function(id, name){
         window.open("edit.php?extension="+id+"&name="+id,"Edit " + name,"width=600,height=400,0,status=0");
