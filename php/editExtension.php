@@ -45,13 +45,16 @@
               }
             }else{
               //No access
+              echo "No access";
             }
           }
         }else{
           //Wrong login data
+          echo "Wrong login data";
         }
       }else{
         //No developer found
+        echo "No developer found";
       }
     }
   }
