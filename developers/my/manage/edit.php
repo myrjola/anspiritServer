@@ -72,10 +72,11 @@
     <script type="text/javascript">
       //Update input field values with real data
       $("document").ready(function(){
-        $(".name").val("<?php echo $name ?>");
-        $(".name").val("<?php echo $name ?>");
-        $(".name").val("<?php echo $name ?>");
-        $(".name").val("<?php echo $name ?>");
+        $(".name").val("<?php echo $name; ?>");
+        $(".description").val("<?php echo $description; ?>");
+        $(".price").val("<?php echo $price; ?>");
+        $(".files").val("<?php echo $pathToExt; ?>");
+        $(".icon").val("<?php echo $linkToIcon; ?>");
       });
     </script>
   </head>
@@ -85,7 +86,7 @@
       Name: <br>
       <input type="text" name="name" class="field name"><br>
       Description: <br>
-      <textarea name="description" rows="8" cols="50"></textarea><br>
+      <textarea name="description" rows="8" cols="50" class="description"></textarea><br>
       Price ($0 - ...): <br>
       <input type="number" name="price" class="field price"><br>
       Files (link to hosted folder): <br>
