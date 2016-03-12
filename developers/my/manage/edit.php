@@ -17,16 +17,20 @@
         background-size: cover;
         font-family: Montserrat;
       }
-      .h1{
+      h1{
         text-align: center;
         font-size: 25px;
       }
+      input{
+        margin-top: 5px;
+      }
       .field{
+        margin: 0px;
         width: 100%;
         height: 20px;
         font-size: 15px;
         border-radius: 0px;
-        background: #fff;
+        background: #f4f4f4;
         color: rgb(40, 40, 40);
       }
       .submit{
