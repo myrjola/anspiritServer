@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <style media="screen">
       body{
-        background: url('http://www.walldevil.com/wallpapers/w08/gradients-simple-background-light-colorful-abstract.jpg') no-repeat fixed center center;
+        background: url('http://alexgurghis.com/themes/vetro/wp-content/uploads/2013/05/bg3.jpg') no-repeat fixed center center;
         background-size: cover;
         font-family: Montserrat;
         font-size: 15px;
@@ -28,7 +28,7 @@
       .field{
         margin: 0px;
         width: 100%;
-        height: 20px;
+        height: 25px;
         font-size: 15px;
         border-radius: 0px;
         background: #f4f4f4;
@@ -46,13 +46,22 @@
     </style>
     <script type="text/javascript">
       //Update input field values with real data
+      $("document").ready(function(){
+        $(".name").val("Name");
+      });
     </script>
   </head>
   <body>
     <h1>Edit extension</h1>
     <form class="" action="/php/editExtension.php" method="post">
       Name: <br>
-      <input type="text" name="name" class="field"><br>
+      <input type="text" name="name" class="field name"><br>
+      Price ($0 - ...): <br>
+      <input type="number" name="price" class="field price"><br>
+      Files: <br>
+      <button type="button" name="uploadExtension" class="field">Upload</button><br> <!-- Upload Care -->
+      Icon link: <br>
+      <input type="number" name="price" class="field icon"><br>
 
       <!-- Hidden inputs -->
       <input type="hidden" name="devId" value="developer id">
