@@ -28,7 +28,7 @@
         margin-top: 5px;
       }
       .field{
-        margin: 0px;
+        margin-left: -5px;
         width: 100%;
         height: 20px;
         font-size: 15px;
