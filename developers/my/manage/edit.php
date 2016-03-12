@@ -58,20 +58,15 @@
   </head>
   <body>
     <h1>Edit extension</h1>
-    <form class="" action="/php/editExtension.php" method="post">
+    <form class="dropzone" action="/php/editExtension.php" method="post">
       Name: <br>
       <input type="text" name="name" class="field name"><br>
       Price ($0 - ...): <br>
       <input type="number" name="price" class="field price"><br>
-      Files: <br>
-      <form action="/file-upload" class="dropzone">
-        <div class="fallback">
-          <input name="file" type="file" multiple />
-        </div>
-      </form>
-      <br>
-      Icon link: <br>
-      <input type="number" name="price" class="field icon"><br>
+      Files (link to hosted folder): <br>
+      <input type="url" name="files" class="field files"><br>
+      Icon link (link to hosted image): <br>
+      <input type="url" name="price" class="field icon"><br>
 
       <!-- Hidden inputs -->
       <input type="hidden" name="devId" value="developer id">
