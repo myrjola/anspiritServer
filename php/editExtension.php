@@ -57,5 +57,4 @@
         echo "No developer found";
       }
     }
-  echo "<br><br>Anspirit";
 ?>
