@@ -15,7 +15,7 @@
            //set all cookies with developer data
            setcookie('password', $pass);
            setcookie('username', $name);
-           setcookie('id', $row['id']);
+           setcookie('id', $row['devId']);
            //redirect to control panel
            $newURL = "./manage/";
            header('Location: '.$newURL);
