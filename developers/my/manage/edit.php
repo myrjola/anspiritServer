@@ -12,7 +12,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="../../../images/anspirit.ico">
     <link rel="apple-touch-icon" href="../../../images/anspirit.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="/js/dropzone.js"></script>
     <style media="screen">
       body{
         background: url('http://alexgurghis.com/themes/vetro/wp-content/uploads/2013/05/bg3.jpg') no-repeat fixed center center;
@@ -47,9 +46,6 @@
       }
     </style>
     <script type="text/javascript">
-      //Setup dropzone
-      var Dropzone = require("dropzone");
-
       //Update input field values with real data
       $("document").ready(function(){
         $(".name").val("Name");
@@ -58,7 +54,7 @@
   </head>
   <body>
     <h1>Edit extension</h1>
-    <form class="dropzone" action="/php/editExtension.php" method="post">
+    <form action="/php/editExtension.php" method="post">
       Name: <br>
       <input type="text" name="name" class="field name"><br>
       Price ($0 - ...): <br>
