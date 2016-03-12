@@ -7,7 +7,8 @@
     $name = $_POST['name'];
     $icon = $_POST['icon'];
     $description = $_POST['description'];
-    $files = $_POST['files'];
+    $pathToExt = $_POST['files'];
+    $price = $_POST['price'];
 
     //Validate user access to edit extension
     $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
@@ -35,7 +36,6 @@
               //Developer has access to edit extension
               //Update fields in database
               $query = "UPDATE `extensions` SET `name`='".$name."',`icon`='".$icon."',`description`='".$description."', `pathToExt`='".$pathToExt."', `price`=".$price." WHERE `id`=".$id;
-              echo $query;
               if ($mysqli -> query($query)) {
                 //Done, everything is now updated
                 echo "Done";
