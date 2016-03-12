@@ -89,7 +89,7 @@
       bottom: 10px;
       left: 10px;
     }
-    h1 { color: #dadada; font-family: 'Helvetica Neue', sans-serif; font-size: 20px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+    h1 { color: #dadada; font-family: 'Helvetica Neue', sans-serif; font-size: 20px; font-weight: bold; line-height: 1; text-align: center; }
     </style>
     <script type="text/javascript">
       $("document").ready(function(){
@@ -106,6 +106,7 @@
       <div class="developerBalance menuLabel">Balance: $ 0.00</div>
       <div class="newExt menuBtn">My Extensions</div>
       <div class="newExt menuBtn">New Extension</div>
+      <div class="newExt menuBtn">Settings</div>
     </div>
     <div class="content">
 
