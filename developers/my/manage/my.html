@@ -44,7 +44,7 @@
         $.ajax({
             type: "get",
             url: 'http://anspirit.org/php/developersExtensions.php',
-            data: {'developer': <?php echo "'" . $_COOKIE['id'] . "'"; ?>},
+            data: {'id': <?php echo "'" . $_COOKIE['id'] . "'"; ?>},
             success: function(data){
               drawTable(data)
             },
