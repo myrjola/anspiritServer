@@ -35,6 +35,7 @@
               //Developer has access to edit extension
               //Update fields in database
               $query = "UPDATE `extensions` SET `name`='".$name."',`icon`='".$icon."',`description`='".$description."', `pathToExt`='".$pathToExt."', `price`=".$price." WHERE `id`=".$id;
+              echo $query;
               if ($mysqli -> query($query)) {
                 //Done, everything is now updated
                 echo "Done";
@@ -56,5 +57,5 @@
         echo "No developer found";
       }
     }
-  echo "Hello";
+  echo "<br>Hello";
 ?>
