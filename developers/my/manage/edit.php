@@ -51,6 +51,7 @@
       h1{
         text-align: center;
         font-size: 30px;
+        color: #fff;
       }
       input{
         margin-top: 5px;
