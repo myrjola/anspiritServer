@@ -64,7 +64,7 @@
         color: rgb(40, 40, 40);
         font-size: 15px;
         margin-left: -5px;
-        width: 100%; 
+        width: 100%;
       }
       .submit{
         height: 30px;
@@ -99,7 +99,7 @@
       Files (link to hosted folder): <br>
       <input type="url" name="files" class="field files"><br>
       Icon link (link to hosted image): <br>
-      <input type="url" name="price" class="field icon"><br>
+      <input type="url" name="icon" class="field icon"><br>
 
       <!-- Hidden inputs -->
       <input type="hidden" name="devId" value="developer id">
