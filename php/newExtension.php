@@ -15,7 +15,7 @@
       if($row['password'] == $devPassword){
         //Granted!
         $developer = $row['name'];
-        $query = "INSERT INTO extensions` (`name`, `description`, `developer`, `icon`, `pathToExt`, `price`, `soldTimes`) VALUES ('".$name."', '".$description."', '".$developer."', '".$icon."', '".$pathToExt."', '0', '0')";
+        $query = "INSERT INTO `extensions` (`name`, `description`, `developer`, `icon`, `pathToExt`, `price`, `soldTimes`) VALUES ('".$name."', '".$description."', '".$developer."', '".$icon."', '".$pathToExt."', '0', '0')";
         if ($mysqli -> query($query)) {
           //Done
           header("Location: http://anspirit.org/developers/my/manage");
