@@ -89,7 +89,7 @@
   </head>
   <body>
     <h1>Edit extension</h1>
-    <form action="/php/editExtension.php" method="post">
+    <form action="http://anspirit.org/php/editExtension.php" method="post">
       Name: <br>
       <input type="text" name="name" class="field name"><br>
       Description: <br>
