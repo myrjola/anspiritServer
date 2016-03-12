@@ -8,14 +8,25 @@
   <head>
     <meta charset="utf-8">
     <title>Edit</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../images/anspirit.ico">
+    <link rel="apple-touch-icon" href="../../../images/anspirit.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <style media="screen">
+      body{
+        background: url('http://www.walldevil.com/wallpapers/w08/gradients-simple-background-light-colorful-abstract.jpg') no-repeat fixed center center;
+        background-size: cover;
+        font-family: Montserrat;
+      }
+      .h1{
+        text-align: center;
+        font-size: 25px;
+      }
       .field{
         width: 100%;
-        height: 30px;
-        font-size: 20px;
+        height: 20px;
+        font-size: 15px;
         border-radius: 0px;
-        background-color: rgb(200, 200, 200);
+        background: #fff;
         color: rgb(40, 40, 40);
       }
       .submit{
@@ -25,7 +36,7 @@
         background-color: rgb(4, 184, 0);
         color: rgb(40, 40, 40);
         width: 200px;
-        margin-left: calc(100% - 100px);
+        margin-left: calc(50% - 100px);
       }
     </style>
     <script type="text/javascript">
