@@ -8,9 +8,11 @@
   <head>
     <meta charset="utf-8">
     <title>Edit</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/x-icon" href="../../../images/anspirit.ico">
     <link rel="apple-touch-icon" href="../../../images/anspirit.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="/js/dropzone.js"></script>
     <style media="screen">
       body{
         background: url('http://alexgurghis.com/themes/vetro/wp-content/uploads/2013/05/bg3.jpg') no-repeat fixed center center;
@@ -45,6 +47,9 @@
       }
     </style>
     <script type="text/javascript">
+      //Setup dropzone
+      var Dropzone = require("dropzone");
+
       //Update input field values with real data
       $("document").ready(function(){
         $(".name").val("Name");
@@ -59,7 +64,8 @@
       Price ($0 - ...): <br>
       <input type="number" name="price" class="field price"><br>
       Files: <br>
-      <button type="button" name="uploadExtension" class="field">Upload</button><br> <!-- Upload Care -->
+      <form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
+      <br>
       Icon link: <br>
       <input type="number" name="price" class="field icon"><br>
 
