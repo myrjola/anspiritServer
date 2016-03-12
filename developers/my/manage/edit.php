@@ -15,6 +15,11 @@
         $pathToExt = $row['pathToExt'];
         $linkToIcon = $row['icon'];
         $description = $row['description'];
+
+        //hidden
+        $devId = $_COOKIE['id'];
+        $devPassword = $_COOKIE['password'];
+        $extensionId = $row['id'];
       }else{
         //No extension found
       }
@@ -84,6 +89,11 @@
         $(".price").val("<?php echo $price; ?>");
         $(".files").val("<?php echo $pathToExt; ?>");
         $(".icon").val("<?php echo $linkToIcon; ?>");
+
+        //Setup hidden inputs
+        $(".devId").val("<?php echo $devId; ?>");
+        $(".devPassword").val("<?php echo $devPassword; ?>");
+        $(".extensionId").val("<?php echo $extensionId; ?>");
       });
     </script>
   </head>
