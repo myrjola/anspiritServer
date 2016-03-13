@@ -1,4 +1,5 @@
 <?php
+if($_POST){
     //Got request to update extension with id $_POST['extensionId'];
     //Set data to variables
     $devId = $_POST['devId'];
@@ -9,6 +10,14 @@
     $description = $_POST['description'];
     $pathToExt = $_POST['files'];
     $price = $_POST['price'];
+try{
+    $all_fields = array('name', 'price', 'description', 'files', 'icon', 'devId', 'devPassword', 'extensionId');
+
+    foreach($all_fields as $field){
+            if(empty($_POST[$field])){
+                    throw new Exception('Required field "'.ucfirst($field).'" missing input.');
+            }
+    }
 
     //Validate user access to edit extension
     $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0b4e78d", "anspiritMain");
@@ -57,4 +66,8 @@
         echo "No developer found";
       }
     }
+  }atch(Exception $e){
+      echo "error: ". $e;
+    }
+}
 ?>
