@@ -44,7 +44,7 @@ try{
     }
   }
 } catch(Exception $e){
-    echo "error".$e;
+    echo "error: ".$e;
   }
 }
 ?>
