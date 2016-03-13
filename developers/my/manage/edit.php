@@ -41,6 +41,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../../../images/anspirit.ico">
     <link rel="apple-touch-icon" href="../../../images/anspirit.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script> 
     <style media="screen">
       body{
         background: url('http://alexgurghis.com/themes/vetro/wp-content/uploads/2013/05/bg3.jpg') no-repeat fixed center center;
