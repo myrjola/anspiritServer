@@ -100,7 +100,7 @@
           $(".newExt").click(function(){
             $(".content").load("./new.html");
           });
-          $("settings").click(function(){
+          $(".settings").click(function(){
             alert("Not yet available!")
           });
         });
