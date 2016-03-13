@@ -95,12 +95,53 @@
         $(".devId").val("<?php echo $devId; ?>");
         $(".devPassword").val("<?php echo $devPassword; ?>");
         $(".extensionId").val("<?php echo $extensionId; ?>");
+
+        //Form validate
+        $('.editExtForm').ajaxForm({
+            beforeSubmit: validate
+        });
+
+        function validate(formData, jqForm, options) {
+          var name = $('textarea[name=name]').fieldValue();
+          var price = $('input[name=price]').fieldValue();
+          var pathToExt = $('input[name=files]').fieldValue();
+          var description = $('input[name=description]').fieldValue();
+          var icon = $('input[name=icon]').fieldValue();
+
+            if (!name[0]) {
+                alert('Please enter a value for name');
+                return false;
+            }
+            if (!price[0]) {
+                alert('Please enter a value for price');
+                return false;
+            }
+            if (!pathToExt[0]) {
+                alert('Please enter a value for path to extension');
+                return false;
+            }
+            if (!description[0]) {
+                alert('Please enter a value for description');
+                return false;
+            }
+            if (!pathToExt[0]) {
+                alert('Please enter a value for path to icon');
+                return false;
+            }
+            else {
+              var name = $('textarea[name=name]').val('');
+              var price = $('input[name=price]').val('');
+              var pathToExt = $('input[name=files]').val('');
+              var description = $('input[name=description]').val('');
+              var icon = $('input[name=icon]').val('');
+            }
+        }
       });
     </script>
   </head>
   <body>
     <h1>Edit extension</h1>
-    <form action="http://anspirit.org/php/editExtension.php" method="post">
+    <form action="http://anspirit.org/php/editExtension.php" method="post" class="editExtForm">
       Name: <br>
       <input type="text" name="name" class="field name"><br>
       Description: <br>
