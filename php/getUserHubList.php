@@ -12,6 +12,7 @@ if($result = $mysqli -> query($query)){
     if($row['password'] == md5($password)){
         //$returnArray = array('id'=>$id, 'email'=>$row['email'], 'hubList'=>$row['hubs']);
         $query = "SELECT * FROM `hub_list` WHERE `owner`='".$id."'";
+        echo $query;
         if($result = $mysqli->query($query)){
           $hubs = array('hubList'=>array());
           while($row = $result->fetch_assoc()){
