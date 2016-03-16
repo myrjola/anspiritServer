@@ -33,3 +33,8 @@
 				 cb(toRet);
 			 }
 	}
+	module.exports.onStart = function(callback){
+	    //This will be executed during first loading
+			console.log("Hello from SmartHome");
+	    callback();
+	}
