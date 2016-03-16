@@ -9,7 +9,7 @@ $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b2a32c755154bf", "c0
 $query = "SELECT * FROM `users` WHERE `id`='".$id."'";
 if($result = $mysqli -> query($query)){
     $row = $result -> fetch_assoc();
-    if($row['password'] == $password){
+    if($row['password'] == md5($password)){
         //$returnArray = array('id'=>$id, 'email'=>$row['email'], 'hubList'=>$row['hubs']);
         $query = "SELECT * FROM `hub_list` WHERE `owner`='".$id."'";
         if($result = $mysqli->query($query)){
