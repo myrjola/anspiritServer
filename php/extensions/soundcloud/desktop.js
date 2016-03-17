@@ -72,7 +72,7 @@ module.exports.processSpeech = function(speech, callback) {
 
   callback(toRet);
 }
-module.exports.processAction = function(action, parameters, speech, emotion, callback) {
+module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, callback) {
   var toRet = {
     'done': false
   };
