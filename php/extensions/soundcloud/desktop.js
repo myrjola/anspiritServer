@@ -5,7 +5,7 @@ module.exports.processSpeech = function(speech, callback) {
   if (speech.contains("music")){
 
     //Debug
-    var scSearch = require('https://github.com/Zein-Fakhreddine/Soundcloud-Search-Node/blob/master/');
+    var scSearch = require('soundcloud-search-node');
     toRet.done = true;
     scSearch.getTracks("Avicii", 10, function callback(tracks){
       for(var i = 0; i < tracks.length; i++){
@@ -83,5 +83,12 @@ module.exports.processAction = function(action, parameters, speech, emotion, cal
 module.exports.onStart = function(callback) {
   //This will be executed during first loading
   console.log("Hello from SoundCloud");
-  callback();
+  var npm = require('npm');
+  npm.load(function(err) {
+    // install module ffi
+    npm.commands.install(['soundcloud-search-node'], function(er, data) {
+      // log errors or data
+      callback();
+    });
+  });
 }
