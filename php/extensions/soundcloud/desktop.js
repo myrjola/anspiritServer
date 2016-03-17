@@ -82,22 +82,5 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
 }
 module.exports.onStart = function(callback) {
   console.log("Hello from SoundCloud");
-
-  var npm = require('npm');
-  npm.load(function(err) {
-    // install module ffi
-    npm.commands.install(['soundcloud-search-node'], function(er, data) {
-      // log errors or data
-      if(!er){
-        console.log("soundcloud-search-node installed");
-      }else {
-        console.error(er);
-      }
-      callback();
-    });
-    if(err){
-      console.error(err);
-      callback();
-    }
-  });
+  callback();
 }
