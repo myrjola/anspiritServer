@@ -18,7 +18,7 @@ module.exports.processSpeech = function(speech, callback) {
       //Pause music
     }else{
       var SoundCloudAudio = require('https://github.com/voronianski/soundcloud-audio.js/blob/master/');
-      var scSearch = require('https://github.com/Zein-Fakhreddine/Soundcloud-Search-Node/blob/master/');
+      var scSearch = require('soundcloud-search-node');
 
       //Get music type  //
       //else            // Get song/playlist url
@@ -88,7 +88,12 @@ module.exports.onStart = function(callback) {
     // install module ffi
     npm.commands.install(['soundcloud-search-node'], function(er, data) {
       // log errors or data
-      callback();
+      //callback();
+      if(!er){
+        console.log("soundcloud-search-node installed");
+      }else {
+        console.error(er);
+      }
     });
   });
 }
