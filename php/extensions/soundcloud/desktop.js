@@ -13,8 +13,7 @@ module.exports.processSpeech = function(speech, callback) {
       }
     });
     //Debug end
-
-    /*
+    /**
     if(speech.contains("pause")){
       //Pause music
     }else{
@@ -68,9 +67,9 @@ module.exports.processSpeech = function(speech, callback) {
             });
         });
       }
-    }
+    }*/
   }
-  */
+
   callback(toRet);
 }
 module.exports.processAction = function(action, parameters, speech, emotion, callback) {
