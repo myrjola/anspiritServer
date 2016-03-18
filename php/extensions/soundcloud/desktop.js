@@ -12,6 +12,7 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
       global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scPlayer.js", function(){
         toRet['done'] = true;
         global.qapi.say("Here is your favourite music!");
+        console.log("Here is your favourite music!");
         scSearch("Avicii", 10, function callback(tracks){
           for(var i = 0; i < tracks.length; i++){
               console.log(tracks[i]);
