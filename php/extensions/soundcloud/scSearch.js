@@ -21,8 +21,6 @@ var scSearch = function (search, limit, callback){
     request({
         url: searchURL
     }, function (error, response, body) {
-        //Check for errors
-        if(error) throw new Error(error);
         //Make sure there is no error and make sure the page is loaded
         if (!error && response.statusCode === 200){
             var checking = String(body).replace("[", "").replace("]", "").split("{\"download_url\"");
