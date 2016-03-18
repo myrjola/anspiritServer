@@ -1,5 +1,3 @@
-var main = {};
-
 module.exports.processSpeech = function(speech, callback) {
   var toRet = {
     'done': false
@@ -8,7 +6,7 @@ module.exports.processSpeech = function(speech, callback) {
 
     //Debug
     toRet.done = true;
-    global.scSearch.getTracks("Avicii", 10, function callback(tracks){
+    globals.scSearch.getTracks("Avicii", 10, function callback(tracks){
       for(var i = 0; i < tracks.length; i++){
           console.log(tracks[i].genre);
       }
@@ -86,10 +84,9 @@ module.exports.onStart = function(callback) {
   console.log("Hello from SoundCloud");
   global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
     //var scSearch = function (search, limit, callback)
-    global.scSearch = scSearch;
+    globals.scSearch = scSearch;
     global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scPlayer.js", function(){
-      global.scPlayer = scPlayer;
-      console.log(global);
+      globals.scPlayer = scPlayer;
       console.log("done loading additional files");
       callback();
     });
