@@ -9,7 +9,7 @@ var searchURL = "http://api.soundcloud.com/tracks.json?client_id=f0c91d25e71d247
  * @param limit "The limit on the amount of tracks to get (1 - 100)
  * @param callback Teh callback function which returns an array of tracks in JSON format
  */
-window.scSearch = function (search, limit, callback){
+var scSearch = function (search, limit, callback){
     if(typeof search != 'string') throw "Seach term is not type of string";
     if(isNaN(limit)) throw "Not a number";
     if(limit > 100 || limit < 1) throw "Limit must be between 1 and 100"

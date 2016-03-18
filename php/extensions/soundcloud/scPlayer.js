@@ -192,4 +192,4 @@ SoundCloud.prototype.cleanData = function () {
     this._playlist = void 0;
 };
 
-window.scPlayer = SoundCloud;
+var scPlayer = SoundCloud;
