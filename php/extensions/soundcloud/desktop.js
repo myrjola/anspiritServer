@@ -10,18 +10,7 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
   if (speech.contains("music")){
     toRet['done'] = true;
     global.qapi.say("Here is your favourite music!");
-    global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
-      global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scPlayer.js", function(){
-        scSearch("Avicii", 10, function callback(tracks){
-          for(var i = 0; i < tracks.length; i++){
-              console.log(tracks[i]);
-              //URI tracks[i].uri
-              //title tracks[i].title
-          }
-          callback(toRet);
-        });
-      });
-    });
+    callback(toRet);
   }else{
     callback(toRet);
   }
