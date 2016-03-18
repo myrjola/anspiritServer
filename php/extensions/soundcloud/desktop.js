@@ -24,9 +24,6 @@ module.exports.processSpeech = function(speech, callback) {
     if(speech.contains("pause")){
       //Pause music
     }else{
-      var SoundCloudAudio = require('https://github.com/voronianski/soundcloud-audio.js/blob/master/');
-      var scSearch = require('soundcloud-search-node');
-
       //Get music type  //
       //else            // Get song/playlist url
       //Play some music //
@@ -34,47 +31,51 @@ module.exports.processSpeech = function(speech, callback) {
       var song = null;
 
       if(speech.contains("piano")){
-
+        //search for music
       }else if(speech.contains("pop")) {
-
+        //search for music
       }else if(speech.contains("acoustic")) {
-
+        //search for music
+      }else{
+        //search for random music
       }
 
       // create new instance of audio
-      var scPlayer = new SoundCloudAudio('f0c91d25e71d247e0f73e4b24e0f8b90');
+      var mainScPlayer = new SoundCloudAudio('f0c91d25e71d247e0f73e4b24e0f8b90');
 
       if(song != null){
         //Play song
-        scPlayer.resolve(song, function (err, track) {
+        mainScPlayer.resolve(song, function (err, track) {
             // do smth with track object
             // e.g. display data in a view etc.
             console.log(track);
 
             // once track is loaded it can be played
-            scPlayer.play();
+            mainScPlayer.play();
 
             // stop playing track and keep silence
-            scPlayer.pause();
+            mainScPlayer.pause();
         });
       }else if(playlist != null){
         //Play playlist
-        scPlayer.resolve(playlist, function (err, playlist) {
+        mainScPlayer.resolve(playlist, function (err, playlist) {
             // do smth with array of `playlist.tracks` or playlist's metadata
             // e.g. display playlist info in a view etc.
             console.log(playlist);
 
             // once playlist is loaded it can be played
-            scPlayer.play();
+            mainScPlayer.play();
 
             // for playlists it's possible to switch to another track in queue
             // e.g. we do it here when playing track is finished
-            scPlayer.on('ended', function () {
-                scPlayer.next();
+            mainScPlayer.on('ended', function () {
+                mainScPlayer.next();
             });
         });
       }
     }*/
+  }else{
+    callback(toRet);
   }
 }
 module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, callback) {
