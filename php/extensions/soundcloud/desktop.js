@@ -6,13 +6,13 @@ module.exports.processSpeech = function(speech, callback) {
 
     //Debug
     toRet.done = true;
-    scSearch.getTracks("Avicii", 10, function callback(tracks){
+    window.scSearch.getTracks("Avicii", 10, function callback(tracks){
       for(var i = 0; i < tracks.length; i++){
           console.log(tracks[i].genre);
       }
     });
     //Debug end
-    
+
     /**
     if(speech.contains("pause")){
       //Pause music
