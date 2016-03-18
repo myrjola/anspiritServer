@@ -5,10 +5,10 @@ module.exports.processSpeech = function(speech, callback) {
   callback(toRet);
 }
 module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, callback) {
-  var toRet = {'done': false};
+  var toRet = {done: false};
 
-  if (speech.contains("music")){
-    toRet['done'] = true;
+  if(speech.contains("music")){
+    toRet.done = true;
     callback(toRet);
   }else{
     callback(toRet);
