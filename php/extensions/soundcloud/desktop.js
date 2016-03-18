@@ -5,7 +5,6 @@ module.exports.processSpeech = function(speech, callback) {
   if (speech.contains("music")){
 
     //Debug
-    var scSearch = require('soundcloud-search-node');
     toRet.done = true;
     scSearch.getTracks("Avicii", 10, function callback(tracks){
       for(var i = 0; i < tracks.length; i++){
@@ -13,6 +12,7 @@ module.exports.processSpeech = function(speech, callback) {
       }
     });
     //Debug end
+    
     /**
     if(speech.contains("pause")){
       //Pause music
