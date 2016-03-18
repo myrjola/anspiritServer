@@ -85,6 +85,7 @@ module.exports.onStart = function(callback) {
   global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
     //var scSearch = function (search, limit, callback)
     global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scPlayer.js", function(){
+      console.log("done loading additional files");
       callback();
     });
     //var scPlayer = SoundCloud
