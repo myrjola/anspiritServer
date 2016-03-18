@@ -1,5 +1,3 @@
-'use strict';
-
 var anchor;
 var keys = 'protocol hostname host pathname port search hash href'.split(' ');
 function _parseURL (url) {
