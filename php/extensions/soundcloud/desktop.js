@@ -5,14 +5,12 @@ module.exports.processSpeech = function(speech, callback) {
   callback(toRet);
 }
 module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, callback) {
-  var toRet = {
-    'done': false
-  };
+  var toRet = {'done': false};
   if (speech.contains("music")){
     //Debug
     global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
       global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scPlayer.js", function(){
-        toRet.done = true;
+        toRet['done'] = true;
         global.qapi.say("Here is your favourite music!");
         scSearch("Avicii", 10, function callback(tracks){
           for(var i = 0; i < tracks.length; i++){
