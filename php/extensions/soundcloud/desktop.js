@@ -81,6 +81,7 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
   callback(toRet);
 }
 module.exports.onStart = function(callback) {
+  console.log("Hello from SoundCloud");
   global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
     //var scSearch = function (search, limit, callback)
     global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scPlayer.js", function(){
