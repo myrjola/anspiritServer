@@ -18,8 +18,8 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
               //URI tracks[i].uri
               //title tracks[i].title
           }
-          callback(toRet);
         });
+        callback(toRet);
       });
     });
   }else{
