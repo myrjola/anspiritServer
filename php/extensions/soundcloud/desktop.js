@@ -10,7 +10,7 @@ module.exports.processSpeech = function(speech, callback) {
         toRet.done = true;
         scSearch("Avicii", 10, function callback(tracks){
           for(var i = 0; i < tracks.length; i++){
-              console.log(tracks[i].name);
+              console.log(tracks[i]);
           }
           callback(toRet);
         });
