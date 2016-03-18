@@ -6,33 +6,36 @@ module.exports.processSpeech = function(speech, callback) {
 }
 module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, callback) {
   var toRet = {'done': false};
-  if (speech.contains("music")){
-    //Debug
-    console.log("Here is your favourite music!");
-    global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
-      global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scPlayer.js", function(){
-        toRet['done'] = true;
-        global.qapi.say("Here is your favourite music!");
-        console.log("Here is your favourite music!");
-        scSearch("Avicii", 10, function callback(tracks){
-          for(var i = 0; i < tracks.length; i++){
-              console.log(tracks[i]);
-              //URI tracks[i].uri
-              //title tracks[i].title
-          }
-        });
-        callback(toRet);
-      });
-    });
-  }else{
-    callback(toRet);
-  }
+  callback(toRet)
 }
 module.exports.onStart = function(callback) {
   console.log("Hello from SoundCloud");
   callback();
 }
 /**
+if (speech.contains("music")){
+  //Debug
+  console.log("Here is your favourite music!");
+  global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
+    global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scPlayer.js", function(){
+      toRet['done'] = true;
+      global.qapi.say("Here is your favourite music!");
+      console.log("Here is your favourite music!");
+      scSearch("Avicii", 10, function callback(tracks){
+        for(var i = 0; i < tracks.length; i++){
+            console.log(tracks[i]);
+            //URI tracks[i].uri
+            //title tracks[i].title
+        }
+      });
+      callback(toRet);
+    });
+  });
+}else{
+  callback(toRet);
+}
+
+
 if(speech.contains("pause")){
   //Pause music
 }else{
