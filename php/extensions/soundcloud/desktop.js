@@ -2,12 +2,18 @@ module.exports.processSpeech = function(speech, callback) {
   var toRet = {
     'done': false
   };
+  callback(toRet);
+}
+module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, callback) {
+  var toRet = {
+    'done': false
+  };
   if (speech.contains("music")){
-
     //Debug
     global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
       global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scPlayer.js", function(){
         toRet.done = true;
+        toRet.speechResponse = "Here is your favourite music!";
         scSearch("Avicii", 10, function callback(tracks){
           for(var i = 0; i < tracks.length; i++){
               console.log(tracks[i]);
@@ -77,14 +83,6 @@ module.exports.processSpeech = function(speech, callback) {
   }else{
     callback(toRet);
   }
-}
-module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, callback) {
-  var toRet = {
-    'done': false
-  };
-  //if done is false, rule search will be continued.
-  //if done is true, action must be performed, because rule search/executing will be done.
-  callback(toRet);
 }
 module.exports.onStart = function(callback) {
   console.log("Hello from SoundCloud");
