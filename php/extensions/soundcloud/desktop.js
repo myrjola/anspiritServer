@@ -8,6 +8,7 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
   var toRet = {'done': false};
   if (speech.contains("music")){
     //Debug
+    console.log("Here is your favourite music!");
     global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
       global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scPlayer.js", function(){
         toRet['done'] = true;
