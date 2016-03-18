@@ -8,7 +8,7 @@ module.exports.processSpeech = function(speech, callback) {
     global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
       global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scPlayer.js", function(){
         toRet.done = true;
-        globals['scSearch'].getTracks("Avicii", 10, function callback(tracks){
+        scSearch.getTracks("Avicii", 10, function callback(tracks){
           for(var i = 0; i < tracks.length; i++){
               console.log(tracks[i].genre);
           }
