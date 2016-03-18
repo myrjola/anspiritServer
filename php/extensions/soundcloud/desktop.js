@@ -9,7 +9,6 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
 
   if (speech.contains("music")){
     toRet['done'] = true;
-    global.qapi.say("Here is your favourite music!");
     callback(toRet);
   }else{
     callback(toRet);
