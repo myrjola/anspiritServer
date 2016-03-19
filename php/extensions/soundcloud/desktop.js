@@ -19,13 +19,14 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
               //URI tracks[i].uri
               //title tracks[i].title
               song = tracks[0].uri;
+              console.log(song);
               playMusic();
         });
       });
     });
 function playMusic(){
     // create new instance of audio
-    var mainScPlayer = new SoundCloudAudio('f0c91d25e71d247e0f73e4b24e0f8b90');
+    var mainScPlayer = new scPlayer('f0c91d25e71d247e0f73e4b24e0f8b90');
 
     if(song != null){
       //Play song
