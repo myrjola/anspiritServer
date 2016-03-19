@@ -1,13 +1,11 @@
 module.exports.processSpeech = function(speech, callback) {
-  var toRet = {
-    done: false
-  };
+  var toRet = {"done":false};
   callback(toRet);
 }
 module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, callback) {
-  var toRet = {done: false};
+  var toRet = {"done":false};
 
-  if(speech.contains("sdhfbsdf")){
+  if(speech.contains("music")){
     toRet.done = true;
     callback(toRet);
   }else{

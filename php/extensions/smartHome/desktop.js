@@ -1,10 +1,10 @@
 
 	module.exports.processSpeech = function(speech, cb){
-	    var toRet = {done:false};
+			var toRet = {"done":false};
 	    cb(toRet);
 	}
 	module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, cb){
-	     var toRet = {done:false};
+			var toRet = {"done":false};
 			 if(action != null){
 				 if(action.contains('smarthome')){
 					 if(window.NearestHub != null){
@@ -14,7 +14,7 @@
 								 data: {task: {action: action, parameters: parameters}, secret: global.qapi.getUserSecret(), user: global.qapi.getUserId(), hubId: window.NearestHub.id},
 								 success: function(data){
 									 console.log("Data from hub: " + data);
-									 toRet.done = true;
+									 toRet["done"] = true;
 									 global.qSay("Done", function(){});
 									 cb(toRet);
 								 },
