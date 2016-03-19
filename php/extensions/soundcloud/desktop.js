@@ -10,7 +10,6 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
     toRet.done = true;
     callback(toRet);
   }else{
-    console.log("SoundCloud no action");
     callback(toRet);
   }
 }
