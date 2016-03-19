@@ -21,7 +21,6 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
               song = tracks[0].uri;
               playMusic();
         });
-        callback(toRet);
       });
     });
 function playMusic(){
