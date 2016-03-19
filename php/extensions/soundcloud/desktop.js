@@ -5,8 +5,9 @@ module.exports.processSpeech = function(speech, callback) {
 module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, callback) {
   var toRet = {"done":false};
   console.log("SoundCloud");
-  if(speech.contains("music")){
+  if(action.contains("media.music")){
     console.log("Play music");
+    toRet.done = true;
     callback(toRet);
   }else{
     console.log("SoundCloud no action");
