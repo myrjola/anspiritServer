@@ -15,8 +15,9 @@
 								 success: function(data){
 									 console.log("Data from hub: " + data);
 									 toRet["done"] = true;
-									 global.qSay("Done", function(){});
-									 cb(toRet);
+									 global.qSay("Done", function(){
+										 	cb(toRet);
+									 });
 								 },
 								 error: function(a, error) {
 									 cb(toRet);
