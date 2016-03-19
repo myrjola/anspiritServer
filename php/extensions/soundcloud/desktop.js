@@ -65,8 +65,6 @@ function playMusic(){
           callback(toRet);
         });
       }
-    }else{
-      callback(toRet);
     }
   }
 }
