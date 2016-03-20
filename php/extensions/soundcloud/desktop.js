@@ -6,16 +6,19 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
   var toRet = {"done":false};
   if(action.contains("media.music")){
     toRet.done = true;
-    //Get music type  //
-    //else            // Get song/playlist url
-    //Play some music //
-    var playlist = null;
+    var style = "Avicii";
+    if (parameters.artist != null) {
+      style = parameters.artist;
+    }else if(parameters.genre != null){
+      style = parameters.genre + " music";
+    }
     var song = null;
     global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
-      scSearch("Avicii", 10, function callback(tracks){
+      scSearch(style, 100, function callback(tracks){
             //URI tracks[i].uri
             //title tracks[i].title
-            song = tracks[0].uri;
+            var songId = Math.floor((Math.random() * 100) + 1) - 1;
+            song = tracks[songId].uri;
             var embded = '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="';
             var url = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/34019569&color=0066cc";
             embded = embded + updateURLParameter(url, 'url', song);
