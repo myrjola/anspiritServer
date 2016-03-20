@@ -13,9 +13,10 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
     var song = null;
     global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
       console.log("script loaded");
-      scSearch("Avicii", 1, function callback(tracks){
+      scSearch("Avicii", 10, function callback(tracks){
             //URI tracks[i].uri
             //title tracks[i].title
+            console.log(tracks);
             song = tracks[0].uri;
             console.log(song);
             var embded = '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="';
