@@ -5,7 +5,6 @@ module.exports.processSpeech = function(speech, callback) {
 module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, callback) {
   var toRet = {"done":false};
   if(action.contains("media.music")){
-    console.log("play music");
     toRet.done = true;
     //Get music type  //
     //else            // Get song/playlist url
@@ -13,6 +12,7 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
     var playlist = null;
     var song = null;
     global.qapi.loadScript("http://anspirit.org/php/extensions/soundcloud/scSearch.js", function() {
+      console.log("script loaded");
       scSearch("Avicii", 1, function callback(tracks){
             //URI tracks[i].uri
             //title tracks[i].title
