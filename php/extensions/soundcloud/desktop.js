@@ -5,6 +5,7 @@ module.exports.processSpeech = function(speech, callback) {
 module.exports.processActionFromSpeech = function(action, parameters, speech, emotion, callback) {
   var toRet = {"done":false};
   if(action.contains("media.music")){
+    console.log("play music");
     toRet.done = true;
     //Get music type  //
     //else            // Get song/playlist url
