@@ -20,10 +20,10 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
             var url = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/34019569&color=0066cc";
             embded = embded + updateURLParameter(url, 'url', song);
             embded = embded + '"></iframe>';
-            callback(toRet);
             newCard(embded);
       });
     });
+    callback(toRet);
   }else{
     callback(toRet);
   }
