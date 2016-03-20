@@ -24,49 +24,51 @@ module.exports.processActionFromSpeech = function(action, parameters, speech, em
         });
       });
     });
-function playMusic(){
-    // create new instance of audio
-    var mainScPlayer = new scPlayer('f0c91d25e71d247e0f73e4b24e0f8b90');
+    function playMusic(){
+        // create new instance of audio
+        var mainScPlayer = new scPlayer('f0c91d25e71d247e0f73e4b24e0f8b90');
 
-    if(song != null){
-      //Play song
-      mainScPlayer.resolve(song, function (err, track) {
-          // do smth with track object
-          // e.g. display data in a view etc.
-          console.log(track);
+        if(song != null){
+          //Play song
+          mainScPlayer.resolve(song, function (err, track) {
+              // do smth with track object
+              // e.g. display data in a view etc.
+              console.log(track);
 
-          // once track is loaded it can be played
-          mainScPlayer.play();
+              // once track is loaded it can be played
+              mainScPlayer.play();
 
-          callback(toRet);
+              callback(toRet);
 
-          // stop playing track and keep silence
-          //mainScPlayer.pause();
-      });
-    }else if(playlist != null){
-      //Play playlist
-      mainScPlayer.resolve(playlist, function (err, playlist) {
-          // do smth with array of `playlist.tracks` or playlist's metadata
-          // e.g. display playlist info in a view etc.
-          console.log(playlist);
-
-          // once playlist is loaded it can be played
-          mainScPlayer.play();
-
-          // for playlists it's possible to switch to another track in queue
-          // e.g. we do it here when playing track is finished
-          mainScPlayer.on('ended', function () {
-              mainScPlayer.next();
+              // stop playing track and keep silence
+              //mainScPlayer.pause();
           });
+        }else if(playlist != null){
+            //Play playlist
+            mainScPlayer.resolve(playlist, function (err, playlist) {
+                // do smth with array of `playlist.tracks` or playlist's metadata
+                // e.g. display playlist info in a view etc.
+                console.log(playlist);
 
-          callback(toRet);
-      });
-      }else{
-        global.qSay("Sorry, can`t find music for you", function(){
-          callback(toRet);
-        });
-      }
-    }
+                // once playlist is loaded it can be played
+                mainScPlayer.play();
+
+                // for playlists it's possible to switch to another track in queue
+                // e.g. we do it here when playing track is finished
+                mainScPlayer.on('ended', function () {
+                    mainScPlayer.next();
+                });
+
+                callback(toRet);
+            });
+          }else{
+            global.qSay("Sorry, can`t find music for you", function(){
+              callback(toRet);
+            });
+          }
+        }
+  }else{
+    callback(toRet);
   }
 }
 module.exports.onStart = function(callback) {
