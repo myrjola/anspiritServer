@@ -10,7 +10,7 @@
 					 if(window.NearestHub != null){
 							 $.ajax({
 								 type: 'get',
-								 url: "http://api.anspirit.net:3000/hub/1",
+								 url: "http://api.anspirit.net:3000/hub/",
 								 data: {task: {action: action, parameters: parameters}, secret: global.qapi.getUserSecret(), user: global.qapi.getUserId(), hubId: window.NearestHub.id},
 								 success: function(data){
 									 console.log("Data from hub: " + data);
